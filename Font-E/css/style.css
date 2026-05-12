@@ -1297,78 +1297,234 @@ p {
        RESPONSIVE
     ========================================================= */
 @media (max-width: 1024px) {
-  .hero-content {
+  body.front-responsive .hero-content {
     grid-template-columns: 1fr;
     align-items: start;
   }
-  .hero-aside {
+  body.front-responsive .hero-aside {
     justify-items: start;
   }
-  .shop {
+  body.front-responsive .shop {
     grid-template-columns: 1fr;
   }
-  .sidebar {
+  body.front-responsive .sidebar {
     position: relative;
     top: auto;
   }
-  .grid {
+  body.front-responsive .grid {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
-  .lab-list {
+  body.front-responsive .lab-list {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
-  .featured-cats {
+  body.front-responsive .featured-cats {
     grid-template-columns: 1fr;
   }
-  .detail {
+  body.front-responsive .detail {
     grid-template-columns: 1fr;
   }
-  .cart {
+  body.front-responsive .cart {
     grid-template-columns: 1fr;
   }
-  .checkout {
+  body.front-responsive .checkout {
     grid-template-columns: 1fr;
   }
-  .foot {
+  body.front-responsive .foot {
     grid-template-columns: 1fr 1fr;
   }
-  .nav {
+  body.front-responsive .nav {
     display: none;
   }
 }
 
+/* Kich thuoc man hinh may tinh bang = 768px */
 @media (max-width: 768px) {
-  :root {
+  body.front-responsive {
     --gutter: 16px;
   }
-  .topbar {
+  body.front-responsive .topbar {
     padding: 12px 0;
   }
-  .grid {
+  body.front-responsive .brand {
+    flex: 1 1 auto;
+    min-width: 0;
+  }
+  body.front-responsive .brand > span:last-child {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+  body.front-responsive .header-actions {
+    flex: 0 0 auto;
+    gap: 8px;
+  }
+  body.front-responsive .section {
+    padding: 28px 0;
+  }
+  body.front-responsive .section-head {
+    align-items: flex-start;
+  }
+  body.front-responsive .section h2 {
+    font-size: 22px;
+  }
+  body.front-responsive .grid {
     grid-template-columns: 1fr;
   }
-  .lab-list {
+  body.front-responsive .grid.grouped-home {
+    gap: 24px;
+  }
+  body.front-responsive .shelf-head {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+  body.front-responsive .shelf-head h3 {
+    font-size: 22px;
+  }
+  body.front-responsive .lab-list {
     grid-template-columns: 1fr;
   }
-  .category-tile {
+  body.front-responsive .category-tile {
     min-height: 128px;
     padding: 18px;
   }
-  .category-tile img {
+  body.front-responsive .category-tile img {
     width: 78px;
     height: 78px;
   }
-  .gallery {
+  body.front-responsive .gallery {
     grid-template-columns: 1fr;
   }
-  .form .row {
+  body.front-responsive .form .row {
     grid-template-columns: 1fr;
   }
-  .foot {
+  body.front-responsive .foot {
     grid-template-columns: 1fr;
   }
-  .hero-stat {
+  body.front-responsive .hero-stat {
     width: 100%;
+  }
+  body.front-responsive .footer-bottom {
+    flex-direction: column;
+  }
+}
+
+/* Man hinh rong tren thiet bi di dong = 480px */
+@media (max-width: 480px) {
+  body.front-responsive {
+    --gutter: 12px;
+    --radius-lg: 16px;
+    --radius-md: 12px;
+  }
+  body.front-responsive .topbar {
+    gap: 10px;
+  }
+  body.front-responsive .mark {
+    width: 34px;
+    height: 34px;
+    border-radius: 12px;
+  }
+  body.front-responsive .brand {
+    font-size: 15px;
+  }
+  body.front-responsive .header-actions {
+    gap: 6px;
+  }
+  body.front-responsive .icon-btn {
+    width: 36px;
+    height: 36px;
+    border-radius: 10px;
+  }
+  body.front-responsive .quick-panel {
+    right: -56px;
+    width: calc(100vw - 24px);
+    padding: 12px;
+    border-radius: 14px;
+  }
+  body.front-responsive .quick-title {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+  body.front-responsive .search-row {
+    grid-template-columns: 1fr;
+  }
+  body.front-responsive .section {
+    padding: 24px 0;
+  }
+  body.front-responsive .section-head {
+    display: grid;
+    gap: 12px;
+  }
+  body.front-responsive .section-head .btn {
+    width: 100%;
+  }
+  body.front-responsive .section-sub {
+    font-size: 14px;
+  }
+  body.front-responsive .p-media {
+    aspect-ratio: 1 / 1;
+  }
+  body.front-responsive .p-body {
+    padding: 12px;
+    min-height: 148px;
+  }
+  body.front-responsive .p-title,
+  body.front-responsive .price {
+    font-size: 15px;
+  }
+  body.front-responsive .btn {
+    width: 100%;
+  }
+  body.front-responsive .footer {
+    padding: 28px 0 34px;
+    border-top-left-radius: 24px;
+    border-top-right-radius: 24px;
+  }
+}
+
+/* Kich thuoc thiet bi nho = 320px */
+@media (max-width: 320px) {
+  body.front-responsive {
+    --gutter: 10px;
+  }
+  body.front-responsive .brand > span:last-child {
+    max-width: 86px;
+  }
+  body.front-responsive .header-actions {
+    gap: 4px;
+  }
+  body.front-responsive .icon-btn {
+    width: 34px;
+    height: 34px;
+  }
+  body.front-responsive .quick-panel {
+    right: -92px;
+    width: calc(100vw - 20px);
+  }
+  body.front-responsive .chip {
+    font-size: 11px;
+    padding: 5px 8px;
+  }
+  body.front-responsive .section h2 {
+    font-size: 20px;
+  }
+  body.front-responsive .shelf-head h3 {
+    font-size: 20px;
+  }
+  body.front-responsive .p-badges,
+  body.front-responsive .p-actions {
+    top: 8px;
+  }
+  body.front-responsive .p-badges {
+    left: 8px;
+  }
+  body.front-responsive .p-actions {
+    right: 8px;
+  }
+  body.front-responsive .p-body {
+    gap: 8px;
+  }
+  body.front-responsive .footer-bottom {
+    font-size: 12px;
   }
 }
 
