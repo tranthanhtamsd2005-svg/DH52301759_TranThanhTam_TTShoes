@@ -1,0 +1,1000 @@
+﻿<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Cửa hàng giày dép hiện đại." />
+  <title>TT Shoes — Sneaker & Footwear</title>
+  <link rel="icon" type="image/svg+xml" href="img/Logo.svg" />
+
+  <!-- Fonts (no JS) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+
+<body>
+  <a class="sr-only" href="#main">Bỏ qua điều hướng, tới nội dung chính</a>
+
+  <!-- =========================================================
+       HEADER (sticky)
+  ========================================================== -->
+  <header class="header" role="banner">
+    <div class="container">
+      <div class="topbar">
+        <a class="brand" href="#home" aria-label="TT Shoes - Trang chủ">
+          <span class="mark" aria-hidden="true">TT</span>
+          <span>TT <span style="opacity: 0.7">Shoes</span></span>
+        </a>
+
+        <nav class="nav" aria-label="Điều hướng chính">
+          <a href="#home" class="link">Trang chủ</a>
+          <a href="nam.html" class="link">Nam</a>
+          <a href="nu.html" class="link">Nữ</a>
+          <a href="phu-kien.html" class="link">Phụ kiện</a>
+          <a href="#sale" class="link">Sale</a>
+          <a href="labthuchanh.html" class="link">Lab thực hành</a>
+        </nav>
+
+        <div class="header-actions" aria-label="Tác vụ nhanh">
+          <div class="header-pop">
+            <input class="header-toggle" id="searchToggle" type="checkbox" />
+            <label class="icon-btn" for="searchToggle" aria-label="Tìm kiếm">
+              <svg class="icon" viewBox="0 0 24 24" aria-hidden="true">
+                <path d="M21 21l-4.35-4.35"></path>
+                <circle cx="11" cy="11" r="6"></circle>
+              </svg>
+            </label>
+            <div class="quick-panel" role="search">
+              <div class="quick-title">
+                <b>Tìm sản phẩm</b>
+                <span class="chip">Sneaker · Running · Sandal</span>
+              </div>
+              <form class="quick-form" data-header-search-form>
+                <div class="search-row">
+                  <input class="input" type="search" name="q" placeholder="Nhập tên giày, hãng, loại..."
+                    autocomplete="off" />
+                  <button class="btn btn-primary btn-sm" type="submit">
+                    Tìm
+                  </button>
+                </div>
+              </form>
+            </div>
+          </div>
+          <a class="icon-btn" href="cart.html" aria-label="Giỏ hàng">
+            <svg class="icon" viewBox="0 0 24 24" aria-hidden="true">
+              <path d="M6 6h15l-1.5 9h-12z"></path>
+              <path d="M6 6l-2-3H2"></path>
+              <circle cx="9" cy="20" r="1.5"></circle>
+              <circle cx="18" cy="20" r="1.5"></circle>
+            </svg>
+            <span class="cart-count" data-cart-count aria-label="Số sản phẩm trong giỏ">0</span>
+          </a>
+          <div class="header-pop">
+            <input class="header-toggle" id="accountToggle" type="checkbox" />
+            <label class="icon-btn" for="accountToggle" aria-label="Tài khoản">
+              <svg class="icon" viewBox="0 0 24 24" aria-hidden="true">
+                <circle cx="12" cy="8" r="4"></circle>
+                <path d="M4 21c1.8-4.2 14.2-4.2 16 0"></path>
+              </svg>
+            </label>
+            <div class="quick-panel" aria-label="Tài khoản">
+              <div class="quick-title">
+                <b>Tài khoản</b>
+                <span class="chip">Thành viên TT Shoes</span>
+              </div>
+              <form class="quick-form" action="#" method="post">
+                <input class="input" type="email" placeholder="Email" autocomplete="email" />
+                <input class="input" type="password" placeholder="Mật khẩu" autocomplete="current-password" />
+                <button class="btn btn-primary" type="submit">
+                  Đăng nhập
+                </button>
+                <div class="account-links">
+                  <a class="link" href="#account">Tạo tài khoản</a>
+                  <a class="link" href="#account">Quên mật khẩu?</a>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main id="main">
+    <!-- =========================================================
+         HERO
+    ========================================================== -->
+    <section id="home" class="hero" aria-label="Banner chính">
+      <div class="container">
+        <div class="hero-card">
+          <div class="hero-img" aria-hidden="true"></div>
+          <div class="hero-media" aria-hidden="true"></div>
+
+          <div class="hero-content">
+            <div>
+              <span class="chip" aria-label="Ưu đãi nổi bật">
+                <span aria-hidden="true">⚡</span> Freeship đơn từ 499K · Đổi
+                trả 30 ngày
+              </span>
+
+              <h1>Luxury sport. Đậm chất đường phố.</h1>
+              <p>
+                Bộ sưu tập sneaker &amp; footwear tối giản, chất liệu cao cấp,
+                form chuẩn. Thiết kế hướng chuyển đổi: dễ chọn, dễ mua, dễ
+                tin.
+              </p>
+
+              <div class="hero-cta" aria-label="Hành động chính">
+                <a class="btn btn-accent" href="#products" aria-label="Mua ngay - tới danh sách sản phẩm">
+                  Mua ngay
+                  <svg class="icon" viewBox="0 0 24 24" aria-hidden="true" style="stroke: #fff">
+                    <path d="M5 12h12"></path>
+                    <path d="M13 6l6 6-6 6"></path>
+                  </svg>
+                </a>
+                <a class="btn btn-outline" href="#detail" aria-label="Xem sản phẩm nổi bật">
+                  Xem nổi bật
+                </a>
+              </div>
+            </div>
+
+            <aside class="hero-aside" aria-label="Điểm nổi bật">
+              <div class="hero-stat" role="note">
+                <b>Top picks tuần này</b>
+                <span>Best-seller · New arrival · Limited drop</span>
+              </div>
+              <div class="hero-stat" role="note">
+                <b>Thanh toán an toàn</b>
+                <span>Mã hoá giao dịch · Hỗ trợ 24/7 · Hoá đơn đầy đủ</span>
+              </div>
+            </aside>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- =========================================================
+         PRODUCT LIST + FILTER SIDEBAR
+    ========================================================== -->
+    <section id="products" class="section" aria-label="Danh sách sản phẩm">
+      <div class="container">
+        <div class="section-head">
+          <div>
+            <h2>Danh mục nổi bật</h2>
+            <p class="section-sub">
+              Khám phá nhanh theo nhu cầu: giày nam, giày nữ, phụ kiện và các
+              mẫu đang ưu đãi.
+            </p>
+          </div>
+          <div style="display: flex; gap: 10px; flex-wrap: wrap">
+            <span class="chip" aria-label="Gợi ý lọc">Gợi ý: chọn size · màu · giá</span>
+            <a class="btn btn-sm btn-outline" href="cart.html#checkout">Đi tới thanh toán</a>
+          </div>
+        </div>
+
+        <div class="shop shop-home">
+          <!-- Sidebar filters -->
+          <aside class="sidebar" aria-label="Bộ lọc sản phẩm">
+            <div class="side-inner">
+              <div class="side-title">
+                <span>Bộ lọc</span>
+                <a class="link" href="#products" aria-label="Đặt lại bộ lọc">Đặt lại</a>
+              </div>
+
+              <div class="facet">
+                <h3>Danh mục</h3>
+                <div class="checks" role="group" aria-label="Danh mục">
+                  <label class="check"><input type="checkbox" checked aria-label="Sneaker" />
+                    <span>Sneaker</span></label>
+                  <label class="check"><input type="checkbox" aria-label="Running" />
+                    <span>Running</span></label>
+                  <label class="check"><input type="checkbox" aria-label="Lifestyle" />
+                    <span>Lifestyle</span></label>
+                  <label class="check"><input type="checkbox" aria-label="Sandal" />
+                    <span>Sandal</span></label>
+                </div>
+              </div>
+
+              <div class="facet">
+                <h3>Giá</h3>
+                <div class="checks" role="group" aria-label="Khoảng giá">
+                  <label class="check"><input type="radio" name="price" checked aria-label="Dưới 1 triệu" />
+                    <span>&lt; 1.000.000đ</span></label>
+                  <label class="check"><input type="radio" name="price" aria-label="1 đến 2 triệu" />
+                    <span>1.000.000đ – 2.000.000đ</span></label>
+                  <label class="check"><input type="radio" name="price" aria-label="Trên 2 triệu" />
+                    <span>&gt; 2.000.000đ</span></label>
+                </div>
+              </div>
+
+              <div class="facet">
+                <h3>Size</h3>
+                <div class="sizes" role="group" aria-label="Chọn size">
+                  <button class="size btn" type="button" aria-label="Size 38">
+                    38
+                  </button>
+                  <button class="size btn" type="button" aria-label="Size 39">
+                    39
+                  </button>
+                  <button class="size btn is-active" type="button" aria-label="Size 40 đang chọn">
+                    40
+                  </button>
+                  <button class="size btn" type="button" aria-label="Size 41">
+                    41
+                  </button>
+                  <button class="size btn" type="button" aria-label="Size 42">
+                    42
+                  </button>
+                </div>
+              </div>
+
+              <div class="facet">
+                <h3>Màu</h3>
+                <div class="swatches" role="group" aria-label="Chọn màu">
+                  <a class="swatch" href="#products" aria-label="Màu đen" style="background: #111"></a>
+                  <a class="swatch" href="#products" aria-label="Màu trắng" style="background: #fff"></a>
+                  <a class="swatch" href="#products" aria-label="Màu cam" style="background: #ff6a00"></a>
+                  <a class="swatch" href="#products" aria-label="Màu đỏ" style="background: #ff4d4f"></a>
+                  <a class="swatch" href="#products" aria-label="Xanh đậm" style="background: #0b1b3a"></a>
+                </div>
+              </div>
+
+              <div class="divider" aria-hidden="true"></div>
+
+              <a class="btn btn-primary" href="#products" aria-label="Áp dụng bộ lọc">
+                Áp dụng
+                <svg class="icon" viewBox="0 0 24 24" aria-hidden="true" style="stroke: #fff">
+                  <path d="M4 6h16"></path>
+                  <path d="M7 12h10"></path>
+                  <path d="M10 18h4"></path>
+                </svg>
+              </a>
+            </div>
+          </aside>
+
+          <!-- Product grid -->
+          <div>
+            <div class="grid grouped-home" role="list" aria-label="Lưới sản phẩm" data-product-grid
+              data-collection="all" data-layout="grouped-home">
+              <!-- Card 1 -->
+              <article class="card p-card" role="listitem" aria-label="Sản phẩm: Noir Runner X"
+                data-product-id="noir-runner-x">
+                <div class="p-media">
+                  <div class="p-badges">
+                    <span class="badge badge-new">NEW</span>
+                    <span class="badge badge-hot">HOT</span>
+                  </div>
+                  <div class="p-actions" aria-label="Hành động nhanh">
+                    <a class="icon-btn" href="detail.html?id=noir-runner-x" aria-label="Xem chi tiết Noir Runner X">
+                      <svg class="icon" viewBox="0 0 24 24" aria-hidden="true">
+                        <path d="M2 12s4-7 10-7 10 7 10 7-4 7-10 7-10-7-10-7z"></path>
+                        <circle cx="12" cy="12" r="3"></circle>
+                      </svg>
+                    </a>
+                    <a class="icon-btn" href="cart.html" aria-label="Thêm Noir Runner X vào giỏ">
+                      <svg class="icon" viewBox="0 0 24 24" aria-hidden="true">
+                        <path d="M6 6h15l-1.5 9h-12z"></path>
+                        <path d="M6 6l-2-3H2"></path>
+                      </svg>
+                    </a>
+                  </div>
+                  <a href="detail.html?id=noir-runner-x" aria-label="Xem chi tiết Noir Runner X">
+                    <img alt="Sneaker màu đen phong cách tối giản"
+                      src="https://images.unsplash.com/photo-1542291026-7eec264c27ff?auto=format&fit=crop&w=1400&q=80" />
+                  </a>
+                </div>
+                <div class="p-body">
+                  <div>
+                    <h3 class="p-title">
+                      <a class="link" href="detail.html?id=noir-runner-x">Noir Runner X</a>
+                    </h3>
+                    <p style="
+                          color: var(--muted);
+                          font-size: 13px;
+                          margin-top: 6px;
+                        ">
+                      Upper knit · Đế nhẹ · Độ bám cao
+                    </p>
+                  </div>
+                  <div class="p-meta">
+                    <div class="price">1.890.000đ</div>
+                    <div class="rating" aria-label="Đánh giá 4.8 trên 5">
+                      <svg class="star" viewBox="0 0 24 24" aria-hidden="true">
+                        <path
+                          d="M12 17.27 18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z" />
+                      </svg>
+                      4.8
+                    </div>
+                  </div>
+                  <a class="btn btn-primary" href="cart.html" aria-label="Thêm Noir Runner X vào giỏ">
+                    Thêm vào giỏ
+                    <svg class="icon" viewBox="0 0 24 24" aria-hidden="true" style="stroke: #fff">
+                      <path d="M12 5v14"></path>
+                      <path d="M5 12h14"></path>
+                    </svg>
+                  </a>
+                </div>
+              </article>
+
+              <!-- Card 2 -->
+              <article class="card p-card" role="listitem" aria-label="Sản phẩm: Aero Pace Pro"
+                data-product-id="aero-pace-pro">
+                <div class="p-media">
+                  <div class="p-badges">
+                    <span class="badge badge-sale">-25%</span>
+                  </div>
+                  <div class="p-actions" aria-label="Hành động nhanh">
+                    <a class="icon-btn" href="detail.html?id=aero-pace-pro" aria-label="Xem chi tiết Aero Pace Pro">
+                      <svg class="icon" viewBox="0 0 24 24" aria-hidden="true">
+                        <path d="M2 12s4-7 10-7 10 7 10 7-4 7-10 7-10-7-10-7z"></path>
+                        <circle cx="12" cy="12" r="3"></circle>
+                      </svg>
+                    </a>
+                    <a class="icon-btn" href="cart.html" aria-label="Thêm Aero Pace Pro vào giỏ">
+                      <svg class="icon" viewBox="0 0 24 24" aria-hidden="true">
+                        <path d="M6 6h15l-1.5 9h-12z"></path>
+                        <path d="M6 6l-2-3H2"></path>
+                      </svg>
+                    </a>
+                  </div>
+                  <a href="detail.html?id=aero-pace-pro" aria-label="Xem chi tiết Aero Pace Pro">
+                    <img alt="Giày chạy bộ màu trắng cam hiện đại"
+                      src="https://images.unsplash.com/photo-1525966222134-fcfa99b8ae77?auto=format&fit=crop&w=1400&q=80" />
+                  </a>
+                </div>
+                <div class="p-body">
+                  <div>
+                    <h3 class="p-title">
+                      <a class="link" href="detail.html?id=aero-pace-pro">Aero Pace Pro</a>
+                    </h3>
+                    <p style="
+                          color: var(--muted);
+                          font-size: 13px;
+                          margin-top: 6px;
+                        ">
+                      Foam responsive · Thoáng khí
+                    </p>
+                  </div>
+                  <div class="p-meta">
+                    <div class="price"><s>2.390.000đ</s>1.790.000đ</div>
+                    <div class="rating" aria-label="Đánh giá 4.7 trên 5">
+                      <svg class="star" viewBox="0 0 24 24" aria-hidden="true">
+                        <path
+                          d="M12 17.27 18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z" />
+                      </svg>
+                      4.7
+                    </div>
+                  </div>
+                  <a class="btn btn-primary" href="cart.html" aria-label="Thêm Aero Pace Pro vào giỏ">
+                    Thêm vào giỏ
+                    <svg class="icon" viewBox="0 0 24 24" aria-hidden="true" style="stroke: #fff">
+                      <path d="M12 5v14"></path>
+                      <path d="M5 12h14"></path>
+                    </svg>
+                  </a>
+                </div>
+              </article>
+
+              <!-- Card 3 -->
+              <article class="card p-card" role="listitem" aria-label="Sản phẩm: Urban Court Low"
+                data-product-id="urban-court-low">
+                <div class="p-media">
+                  <div class="p-badges">
+                    <span class="badge badge-new">NEW</span>
+                  </div>
+                  <div class="p-actions" aria-label="Hành động nhanh">
+                    <a class="icon-btn" href="detail.html?id=urban-court-low" aria-label="Xem chi tiết Urban Court Low">
+                      <svg class="icon" viewBox="0 0 24 24" aria-hidden="true">
+                        <path d="M2 12s4-7 10-7 10 7 10 7-4 7-10 7-10-7-10-7z"></path>
+                        <circle cx="12" cy="12" r="3"></circle>
+                      </svg>
+                    </a>
+                    <a class="icon-btn" href="cart.html" aria-label="Thêm Urban Court Low vào giỏ  ">
+                      <svg class="icon" viewBox="0 0 24 24" aria-hidden="true">
+                        <path d="M6 6h15l-1.5 9h-12z"></path>
+                        <path d="M6 6l-2-3H2"></path>
+                      </svg>
+                    </a>
+                  </div>
+                  <a href="detail.html?id=urban-court-low" aria-label="Xem chi tiết Urban Court Low">
+                    <img alt="Sneaker lifestyle màu be sang trọng"
+                      src="https://images.unsplash.com/photo-1529810313688-44ea1c2d81d3?auto=format&fit=crop&w=1400&q=80" />
+                  </a>
+                </div>
+                <div class="p-body">
+                  <div>
+                    <h3 class="p-title">
+                      <a class="link" href="detail.html?id=urban-court-low">Urban Court Low</a>
+                    </h3>
+                    <p style="
+                          color: var(--muted);
+                          font-size: 13px;
+                          margin-top: 6px;
+                        ">
+                      Leather touch · Form slim · Clean
+                    </p>
+                  </div>
+                  <div class="p-meta">
+                    <div class="price">1.590.000đ</div>
+                    <div class="rating" aria-label="Đánh giá 4.6 trên 5">
+                      <svg class="star" viewBox="0 0 24 24" aria-hidden="true">
+                        <path
+                          d="M12 17.27 18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z" />
+                      </svg>
+                      4.6
+                    </div>
+                  </div>
+                  <a class="btn btn-primary" href="cart.html" aria-label="Thêm Urban Court Low vào giỏ  ">
+                    Thêm vào giỏ
+                    <svg class="icon" viewBox="0 0 24 24" aria-hidden="true" style="stroke: #fff">
+                      <path d="M12 5v14"></path>
+                      <path d="M5 12h14"></path>
+                    </svg>
+                  </a>
+                </div>
+              </article>
+
+              <!-- Card 4 -->
+              <article class="card p-card" role="listitem" aria-label="Sản phẩm: Sandal Motion Strap"
+                data-product-id="sandal-motion-strap">
+                <div class="p-media">
+                  <div class="p-badges">
+                    <span class="badge badge-sale">-15%</span>
+                  </div>
+                  <div class="p-actions" aria-label="Hành động nhanh">
+                    <a class="icon-btn" href="detail.html?id=sandal-motion-strap"
+                      aria-label="Xem chi tiết Sandal Motion Strap">
+                      <svg class="icon" viewBox="0 0 24 24" aria-hidden="true">
+                        <path d="M2 12s4-7 10-7 10 7 10 7-4 7-10 7-10-7-10-7z"></path>
+                        <circle cx="12" cy="12" r="3"></circle>
+                      </svg>
+                    </a>
+                    <a class="icon-btn" href="cart.html" aria-label="Thêm Sandal Motion Strap vào giỏ  ">
+                      <svg class="icon" viewBox="0 0 24 24" aria-hidden="true">
+                        <path d="M6 6h15l-1.5 9h-12z"></path>
+                        <path d="M6 6l-2-3H2"></path>
+                      </svg>
+                    </a>
+                  </div>
+                  <a href="detail.html?id=sandal-motion-strap" aria-label="Xem chi tiết Sandal Motion Strap">
+                    <img alt="Sandal thể thao màu đen cam"
+                      src="https://images.unsplash.com/photo-1600269452121-4f2416e55c28?auto=format&fit=crop&w=1400&q=80" />
+                  </a>
+                </div>
+                <div class="p-body">
+                  <div>
+                    <h3 class="p-title">
+                      <a class="link" href="detail.html?id=sandal-motion-strap">Sandal Motion Strap</a>
+                    </h3>
+                    <p style="
+                          color: var(--muted);
+                          font-size: 13px;
+                          margin-top: 6px;
+                        ">
+                      Êm chân · Dễ phối · Bền
+                    </p>
+                  </div>
+                  <div class="p-meta">
+                    <div class="price"><s>990.000đ</s>840.000đ</div>
+                    <div class="rating" aria-label="Đánh giá 4.5 trên 5">
+                      <svg class="star" viewBox="0 0 24 24" aria-hidden="true">
+                        <path
+                          d="M12 17.27 18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z" />
+                      </svg>
+                      4.5
+                    </div>
+                  </div>
+                  <a class="btn btn-primary" href="cart.html" aria-label="Thêm Sandal Motion Strap vào giỏ  ">
+                    Thêm vào giỏ
+                    <svg class="icon" viewBox="0 0 24 24" aria-hidden="true" style="stroke: #fff">
+                      <path d="M12 5v14"></path>
+                      <path d="M5 12h14"></path>
+                    </svg>
+                  </a>
+                </div>
+              </article>
+
+              <!-- Card 5 -->
+              <article class="card p-card" role="listitem" aria-label="Sản phẩm: Midnight High Top"
+                data-product-id="midnight-high-top">
+                <div class="p-media">
+                  <div class="p-badges">
+                    <span class="badge badge-hot">LIMITED</span>
+                  </div>
+                  <div class="p-actions" aria-label="Hành động nhanh">
+                    <a class="icon-btn" href="detail.html?id=midnight-high-top"
+                      aria-label="Xem chi tiết Midnight High Top">
+                      <svg class="icon" viewBox="0 0 24 24" aria-hidden="true">
+                        <path d="M2 12s4-7 10-7 10 7 10 7-4 7-10 7-10-7-10-7z"></path>
+                        <circle cx="12" cy="12" r="3"></circle>
+                      </svg>
+                    </a>
+                    <a class="icon-btn" href="cart.html" aria-label="Thêm Midnight High Top vào giỏ  ">
+                      <svg class="icon" viewBox="0 0 24 24" aria-hidden="true">
+                        <path d="M6 6h15l-1.5 9h-12z"></path>
+                        <path d="M6 6l-2-3H2"></path>
+                      </svg>
+                    </a>
+                  </div>
+                  <a href="detail.html?id=midnight-high-top" aria-label="Xem chi tiết Midnight High Top">
+                    <img alt="Giày cổ cao màu đen sang trọng"
+                      src="https://images.unsplash.com/photo-1521093470119-a3acdc43374a?auto=format&fit=crop&w=1400&q=80" />
+                  </a>
+                </div>
+                <div class="p-body">
+                  <div>
+                    <h3 class="p-title">
+                      <a class="link" href="detail.html?id=midnight-high-top">Midnight High Top</a>
+                    </h3>
+                    <p style="
+                          color: var(--muted);
+                          font-size: 13px;
+                          margin-top: 6px;
+                        ">
+                      Cổ cao · Da mịn · Độ ôm tốt
+                    </p>
+                  </div>
+                  <div class="p-meta">
+                    <div class="price">2.690.000đ</div>
+                    <div class="rating" aria-label="Đánh giá 4.9 trên 5">
+                      <svg class="star" viewBox="0 0 24 24" aria-hidden="true">
+                        <path
+                          d="M12 17.27 18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z" />
+                      </svg>
+                      4.9
+                    </div>
+                  </div>
+                  <a class="btn btn-primary" href="cart.html" aria-label="Thêm Midnight High Top vào giỏ  ">
+                    Thêm vào giỏ
+                    <svg class="icon" viewBox="0 0 24 24" aria-hidden="true" style="stroke: #fff">
+                      <path d="M12 5v14"></path>
+                      <path d="M5 12h14"></path>
+                    </svg>
+                  </a>
+                </div>
+              </article>
+
+              <!-- Card 6 -->
+              <article class="card p-card" role="listitem" aria-label="Sản phẩm: Cloud Slip-on"
+                data-product-id="cloud-slip-on">
+                <div class="p-media">
+                  <div class="p-badges">
+                    <span class="badge badge-sale">-30%</span>
+                  </div>
+                  <div class="p-actions" aria-label="Hành động nhanh">
+                    <a class="icon-btn" href="detail.html?id=cloud-slip-on" aria-label="Xem chi tiết Cloud Slip-on">
+                      <svg class="icon" viewBox="0 0 24 24" aria-hidden="true">
+                        <path d="M2 12s4-7 10-7 10 7 10 7-4 7-10 7-10-7-10-7z"></path>
+                        <circle cx="12" cy="12" r="3"></circle>
+                      </svg>
+                    </a>
+                    <a class="icon-btn" href="cart.html" aria-label="Thêm Cloud Slip-on vào giỏ  ">
+                      <svg class="icon" viewBox="0 0 24 24" aria-hidden="true">
+                        <path d="M6 6h15l-1.5 9h-12z"></path>
+                        <path d="M6 6l-2-3H2"></path>
+                      </svg>
+                    </a>
+                  </div>
+                  <a href="detail.html?id=cloud-slip-on" aria-label="Xem chi tiết Cloud Slip-on">
+                    <img alt="Giày slip-on màu trắng tối giản"
+                      src="https://images.unsplash.com/photo-1549298916-b41d501d3772?auto=format&fit=crop&w=1400&q=80" />
+                  </a>
+                </div>
+                <div class="p-body">
+                  <div>
+                    <h3 class="p-title">
+                      <a class="link" href="detail.html?id=cloud-slip-on">Cloud Slip-on</a>
+                    </h3>
+                    <p style="
+                          color: var(--muted);
+                          font-size: 13px;
+                          margin-top: 6px;
+                        ">
+                      Dễ mang · Êm · Tối giản
+                    </p>
+                  </div>
+                  <div class="p-meta">
+                    <div class="price"><s>1.290.000đ</s>899.000đ</div>
+                    <div class="rating" aria-label="Đánh giá 4.4 trên 5">
+                      <svg class="star" viewBox="0 0 24 24" aria-hidden="true">
+                        <path
+                          d="M12 17.27 18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z" />
+                      </svg>
+                      4.4
+                    </div>
+                  </div>
+                  <a class="btn btn-primary" href="cart.html" aria-label="Thêm Cloud Slip-on vào giỏ  ">
+                    Thêm vào giỏ
+                    <svg class="icon" viewBox="0 0 24 24" aria-hidden="true" style="stroke: #fff">
+                      <path d="M12 5v14"></path>
+                      <path d="M5 12h14"></path>
+                    </svg>
+                  </a>
+                </div>
+              </article>
+
+              <!-- Card 7 -->
+              <article class="card p-card" role="listitem" aria-label="Sản phẩm: Street Flex 2.0"
+                data-product-id="street-flex-2">
+                <div class="p-media">
+                  <div class="p-badges">
+                    <span class="badge badge-new">NEW</span>
+                  </div>
+                  <div class="p-actions" aria-label="Hành động nhanh">
+                    <a class="icon-btn" href="detail.html?id=street-flex-2" aria-label="Xem chi tiết Street Flex 2.0">
+                      <svg class="icon" viewBox="0 0 24 24" aria-hidden="true">
+                        <path d="M2 12s4-7 10-7 10 7 10 7-4 7-10 7-10-7-10-7z"></path>
+                        <circle cx="12" cy="12" r="3"></circle>
+                      </svg>
+                    </a>
+                    <a class="icon-btn" href="cart.html" aria-label="Thêm Street Flex 2.0 vào giỏ  ">
+                      <svg class="icon" viewBox="0 0 24 24" aria-hidden="true">
+                        <path d="M6 6h15l-1.5 9h-12z"></path>
+                        <path d="M6 6l-2-3H2"></path>
+                      </svg>
+                    </a>
+                  </div>
+                  <a href="detail.html?id=street-flex-2" aria-label="Xem chi tiết Street Flex 2.0">
+                    <img alt="Sneaker streetwear phối màu cam đen"
+                      src="https://images.unsplash.com/photo-1552346154-21d32810aba3?auto=format&fit=crop&w=1400&q=80" />
+                  </a>
+                </div>
+                <div class="p-body">
+                  <div>
+                    <h3 class="p-title">
+                      <a class="link" href="detail.html?id=street-flex-2">Street Flex 2.0</a>
+                    </h3>
+                    <p style="
+                          color: var(--muted);
+                          font-size: 13px;
+                          margin-top: 6px;
+                        ">
+                      Đệm tốt · Form rộng · Bền
+                    </p>
+                  </div>
+                  <div class="p-meta">
+                    <div class="price">1.990.000đ</div>
+                    <div class="rating" aria-label="Đánh giá 4.7 trên 5">
+                      <svg class="star" viewBox="0 0 24 24" aria-hidden="true">
+                        <path
+                          d="M12 17.27 18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z" />
+                      </svg>
+                      4.7
+                    </div>
+                  </div>
+                  <a class="btn btn-primary" href="cart.html" aria-label="Thêm Street Flex 2.0 vào giỏ  ">
+                    Thêm vào giỏ
+                    <svg class="icon" viewBox="0 0 24 24" aria-hidden="true" style="stroke: #fff">
+                      <path d="M12 5v14"></path>
+                      <path d="M5 12h14"></path>
+                    </svg>
+                  </a>
+                </div>
+              </article>
+
+              <!-- Card 8 -->
+              <article class="card p-card" role="listitem" aria-label="Sản phẩm: Zenith Trainer"
+                data-product-id="zenith-trainer">
+                <div class="p-media">
+                  <div class="p-badges">
+                    <span class="badge badge-sale">-10%</span>
+                    <span class="badge badge-hot">BEST</span>
+                  </div>
+                  <div class="p-actions" aria-label="Hành động nhanh">
+                    <a class="icon-btn" href="detail.html?id=zenith-trainer" aria-label="Xem chi tiết Zenith Trainer">
+                      <svg class="icon" viewBox="0 0 24 24" aria-hidden="true">
+                        <path d="M2 12s4-7 10-7 10 7 10 7-4 7-10 7-10-7-10-7z"></path>
+                        <circle cx="12" cy="12" r="3"></circle>
+                      </svg>
+                    </a>
+                    <a class="icon-btn" href="cart.html" aria-label="Thêm Zenith Trainer vào giỏ  ">
+                      <svg class="icon" viewBox="0 0 24 24" aria-hidden="true">
+                        <path d="M6 6h15l-1.5 9h-12z"></path>
+                        <path d="M6 6l-2-3H2"></path>
+                      </svg>
+                    </a>
+                  </div>
+                  <a href="detail.html?id=zenith-trainer" aria-label="Xem chi tiết Zenith Trainer">
+                    <img alt="Giày trainer màu xanh đậm sang trọng"
+                      src="https://images.unsplash.com/photo-1519741497674-611481863552?auto=format&fit=crop&w=1400&q=80" />
+                  </a>
+                </div>
+                <div class="p-body">
+                  <div>
+                    <h3 class="p-title">
+                      <a class="link" href="detail.html?id=zenith-trainer">Zenith Trainer</a>
+                    </h3>
+                    <p style="
+                          color: var(--muted);
+                          font-size: 13px;
+                          margin-top: 6px;
+                        ">
+                      Stability · Hỗ trợ cổ chân
+                    </p>
+                  </div>
+                  <div class="p-meta">
+                    <div class="price"><s>2.190.000đ</s>1.970.000đ</div>
+                    <div class="rating" aria-label="Đánh giá 4.8 trên 5">
+                      <svg class="star" viewBox="0 0 24 24" aria-hidden="true">
+                        <path
+                          d="M12 17.27 18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z" />
+                      </svg>
+                      4.8
+                    </div>
+                  </div>
+                  <a class="btn btn-primary" href="cart.html" aria-label="Thêm Zenith Trainer vào giỏ  ">
+                    Thêm vào giỏ
+                    <svg class="icon" viewBox="0 0 24 24" aria-hidden="true" style="stroke: #fff">
+                      <path d="M12 5v14"></path>
+                      <path d="M5 12h14"></path>
+                    </svg>
+                  </a>
+                </div>
+              </article>
+
+              <!-- Card 9 -->
+              <article class="card p-card" role="listitem" aria-label="Sản phẩm: Terra Trek Runner"
+                data-product-id="terra-trek-runner">
+                <div class="p-media">
+                  <div class="p-badges">
+                    <span class="badge badge-new">NEW</span>
+                  </div>
+                  <div class="p-actions" aria-label="Hành động nhanh">
+                    <a class="icon-btn" href="detail.html?id=terra-trek-runner"
+                      aria-label="Xem chi tiết Terra Trek Runner">
+                      <svg class="icon" viewBox="0 0 24 24" aria-hidden="true">
+                        <path d="M2 12s4-7 10-7 10 7 10 7-4 7-10 7-10-7-10-7z"></path>
+                        <circle cx="12" cy="12" r="3"></circle>
+                      </svg>
+                    </a>
+                    <a class="icon-btn" href="cart.html" aria-label="Thêm Terra Trek Runner vào giỏ">
+                      <svg class="icon" viewBox="0 0 24 24" aria-hidden="true">
+                        <path d="M6 6h15l-1.5 9h-12z"></path>
+                        <path d="M6 6l-2-3H2"></path>
+                      </svg>
+                    </a>
+                  </div>
+                  <a href="detail.html?id=terra-trek-runner" aria-label="Xem chi tiết Terra Trek Runner">
+                    <img alt="Giày trail màu xám xanh bền bỉ"
+                      src="https://images.unsplash.com/photo-1549298916-b41d501d3772?auto=format&fit=crop&w=1400&q=80" />
+                  </a>
+                </div>
+                <div class="p-body">
+                  <div>
+                    <h3 class="p-title">
+                      <a class="link" href="detail.html?id=terra-trek-runner">Terra Trek Runner</a>
+                    </h3>
+                    <p style="
+                          color: var(--muted);
+                          font-size: 13px;
+                          margin-top: 6px;
+                        ">
+                      Grip tốt · Chống trơn · Đi mưa ổn
+                    </p>
+                  </div>
+                  <div class="p-meta">
+                    <div class="price">2.150.000đ</div>
+                    <div class="rating" aria-label="Đánh giá 4.6 trên 5">
+                      <svg class="star" viewBox="0 0 24 24" aria-hidden="true">
+                        <path
+                          d="M12 17.27 18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z" />
+                      </svg>
+                      4.6
+                    </div>
+                  </div>
+                  <a class="btn btn-primary" href="cart.html" aria-label="Thêm Terra Trek Runner vào giỏ">
+                    Thêm vào giỏ
+                    <svg class="icon" viewBox="0 0 24 24" aria-hidden="true" style="stroke: #fff">
+                      <path d="M12 5v14"></path>
+                      <path d="M5 12h14"></path>
+                    </svg>
+                  </a>
+                </div>
+              </article>
+
+              <!-- Card 10 -->
+              <article class="card p-card" role="listitem" aria-label="Sản phẩm: Velvet Court Deluxe"
+                data-product-id="velvet-court-deluxe">
+                <div class="p-media">
+                  <div class="p-badges">
+                    <span class="badge badge-sale">-20%</span>
+                    <span class="badge badge-hot">HOT</span>
+                  </div>
+                  <div class="p-actions" aria-label="Hành động nhanh">
+                    <a class="icon-btn" href="detail.html?id=velvet-court-deluxe"
+                      aria-label="Xem chi tiết Velvet Court Deluxe">
+                      <svg class="icon" viewBox="0 0 24 24" aria-hidden="true">
+                        <path d="M2 12s4-7 10-7 10 7 10 7-4 7-10 7-10-7-10-7z"></path>
+                        <circle cx="12" cy="12" r="3"></circle>
+                      </svg>
+                    </a>
+                    <a class="icon-btn" href="cart.html" aria-label="Thêm Velvet Court Deluxe vào giỏ">
+                      <svg class="icon" viewBox="0 0 24 24" aria-hidden="true">
+                        <path d="M6 6h15l-1.5 9h-12z"></path>
+                        <path d="M6 6l-2-3H2"></path>
+                      </svg>
+                    </a>
+                  </div>
+                  <a href="detail.html?id=velvet-court-deluxe" aria-label="Xem chi tiết Velvet Court Deluxe">
+                    <img alt="Giày court nâu sang phong cách retro"
+                      src="https://images.unsplash.com/photo-1529810313688-44ea1c2d81d3?auto=format&fit=crop&w=1400&q=80" />
+                  </a>
+                </div>
+                <div class="p-body">
+                  <div>
+                    <h3 class="p-title">
+                      <a class="link" href="detail.html?id=velvet-court-deluxe">Velvet Court Deluxe</a>
+                    </h3>
+                    <p style="
+                          color: var(--muted);
+                          font-size: 13px;
+                          margin-top: 6px;
+                        ">
+                      Retro clean · Da mềm · Lót êm
+                    </p>
+                  </div>
+                  <div class="p-meta">
+                    <div class="price"><s>2.490.000đ</s>1.990.000đ</div>
+                    <div class="rating" aria-label="Đánh giá 4.8 trên 5">
+                      <svg class="star" viewBox="0 0 24 24" aria-hidden="true">
+                        <path
+                          d="M12 17.27 18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z" />
+                      </svg>
+                      4.8
+                    </div>
+                  </div>
+                  <a class="btn btn-primary" href="cart.html" aria-label="Thêm Velvet Court Deluxe vào giỏ">
+                    Thêm vào giỏ
+                    <svg class="icon" viewBox="0 0 24 24" aria-hidden="true" style="stroke: #fff">
+                      <path d="M12 5v14"></path>
+                      <path d="M5 12h14"></path>
+                    </svg>
+                  </a>
+                </div>
+              </article>
+            </div>
+
+            <!-- Simple category anchors   -->
+            <div class="section" style="padding: 18px 0 0">
+              <div class="panel">
+                <div class="panel-pad" style="
+                      display: flex;
+                      align-items: center;
+                      justify-content: space-between;
+                      gap: 12px;
+                      flex-wrap: wrap;
+                    ">
+                  <div>
+                    <b style="font-weight: 900; letter-spacing: -0.02em">Danh mục nhanh</b>
+                    <div style="color: var(--muted); margin-top: 6px"></div>
+                  </div>
+                  <div style="display: flex; gap: 10px; flex-wrap: wrap">
+                    <a id="men" class="btn btn-outline" href="nam.html" aria-label="Danh mục Nam  ">Nam</a>
+                    <a id="women" class="btn btn-outline" href="nu.html" aria-label="Danh mục Nữ  ">Nữ</a>
+                    <a id="sale" class="btn btn-outline" href="#products" aria-label="Danh mục Sale  ">Sale</a>
+                    <a class="btn btn-primary" href="#detail" aria-label="Xem layout chi tiết sản phẩm">Xem chi tiết</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- =========================================================
+       FOOTER
+  ========================================================== -->
+  <footer id="footer" class="footer" role="contentinfo" aria-label="Chân trang">
+    <div class="container">
+      <div class="foot">
+        <div>
+          <div class="brand" style="margin-bottom: 10px">
+            <span class="mark" aria-hidden="true">TT</span>
+            <span>TT <span style="opacity: 0.7">Shoes</span></span>
+          </div>
+          <div style="
+                margin-top: 12px;
+                display: flex;
+                gap: 10px;
+                flex-wrap: wrap;
+              ">
+            <span class="chip" style="
+                  background: rgba(255, 255, 255, 0.1);
+                  border-color: rgba(255, 255, 255, 0.14);
+                  color: rgba(255, 255, 255, 0.78);
+                ">Hỗ trợ: 1900 0000</span>
+            <span class="chip" style="
+                  background: rgba(255, 255, 255, 0.1);
+                  border-color: rgba(255, 255, 255, 0.14);
+                  color: rgba(255, 255, 255, 0.78);
+                ">Email: dh52301759@student.stu.edu.vn</span>
+          </div>
+        </div>
+
+        <div>
+          <h4>Công ty</h4>
+          <ul aria-label="Liên kết công ty">
+            <li><a class="link" href="#footer">Giới thiệu</a></li>
+            <li><a class="link" href="#footer">Tuyển dụng</a></li>
+            <li><a class="link" href="#footer">Điều khoản</a></li>
+            <li><a class="link" href="#footer">Chính sách bảo mật</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4>Hỗ trợ</h4>
+          <ul aria-label="Liên kết hỗ trợ">
+            <li><a class="link" href="#footer">Hướng dẫn chọn size</a></li>
+            <li>
+              <a class="link" href="#footer">Đổi trả &amp; hoàn tiền</a>
+            </li>
+            <li><a class="link" href="#footer">Vận chuyển</a></li>
+            <li><a class="link" href="#footer">Câu hỏi thường gặp</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4>Kết nối</h4>
+          <div class="social" aria-label="Mạng xã hội">
+            <a href="#footer" aria-label="Instagram">
+              <svg class="icon" viewBox="0 0 24 24" aria-hidden="true" style="stroke: #fff">
+                <rect x="4" y="4" width="16" height="16" rx="4"></rect>
+                <circle cx="12" cy="12" r="3.5"></circle>
+                <path d="M17.5 6.5h.01"></path>
+              </svg>
+            </a>
+            <a href="https://www.facebook.com/DHCNSG" aria-label="Facebook">
+              <svg class="icon" viewBox="0 0 24 24" aria-hidden="true" style="stroke: #fff">
+                <path d="M14 9h3V6h-3c-2.2 0-4 1.8-4 4v3H7v3h3v6h3v-6h3l1-3h-4v-3c0-.6.4-1 1-1z"></path>
+              </svg>
+            </a>
+            <a href="https://www.youtube.com/@Tr%C6%B0%E1%BB%9Dng%C4%90%E1%BA%A1ih%E1%BB%8DcC%C3%B4ngngh%E1%BB%87S%C3%A0iG%C3%B2n-STU"
+              aria-label="YouTube">
+              <svg class="icon" viewBox="0 0 24 24" aria-hidden="true" style="stroke: #fff">
+                <path d="M22 12s0-4-1-5-5-1-9-1-8 0-9 1-1 5-1 5 0 4 1 5 5 1 9 1 8 0 9-1 1-5 1-5z"></path>
+                <path d="M10 15V9l6 3-6 3z"></path>
+              </svg>
+            </a>
+            <a href="https://www.tiktok.com/@dhcnsg" aria-label="TikTok">
+              <svg class="icon" viewBox="0 0 24 24" aria-hidden="true" style="stroke: #fff">
+                <path d="M14 4v10a4 4 0 1 1-4-4"></path>
+                <path d="M14 4c1.5 2.5 3.5 4 6 4"></path>
+              </svg>
+            </a>
+          </div>
+
+          <div class="newsletter" aria-label="Đăng ký nhận tin">
+            <div class="field" style="margin-top: 14px">
+              <label class="label" for="nl" style="color: rgba(255, 255, 255, 0.78)">Newsletter</label>
+              <input class="input" id="nl" name="nl" type="email" placeholder="Email của bạn" />
+            </div>
+            <a class="btn btn-accent" href="#footer" aria-label="Đăng ký  ">Đăng ký
+            </a>
+            <p style="
+                  color: rgba(255, 255, 255, 0.64);
+                  font-size: 13px;
+                  line-height: 1.8;
+                ">
+              Nhận ưu đãi &amp; drops mới.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom" aria-label="Thông tin bản quyền">
+        <span>© TT Shoes.</span>
+        <span>Họ và tên: Trần Thanh Tâm | MSSV: DH52301759 | Lớp: D23_TH04 | Nhóm
+          16 Thứ 5 Ca 1</span>
+      </div>
+    </div>
+  </footer>
+  <script src="js/main.js"></script>
+</body>
+
+</html>

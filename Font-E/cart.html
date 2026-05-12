@@ -1,0 +1,424 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Cửa hàng giày dép hiện đại." />
+  <title>TT Shoes — Sneaker & Footwear</title>
+  <link rel="icon" type="image/svg+xml" href="img/Logo.svg" />
+
+  <!-- Fonts (no JS) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+
+<body>
+  <a class="sr-only" href="#main">Bỏ qua điều hướng, tới nội dung chính</a>
+
+  <!-- =========================================================
+       HEADER (sticky)
+  ========================================================== -->
+  <header class="header" role="banner">
+    <div class="container">
+      <div class="topbar">
+        <a class="brand" href="index.html#home" aria-label="TT Shoes - Trang chủ">
+          <span class="mark" aria-hidden="true">TT</span>
+          <span>TT <span style="opacity: 0.7">Shoes</span></span>
+        </a>
+
+        <nav class="nav" aria-label="Điều hướng chính">
+          <a href="index.html#home" class="link">Trang chủ</a>
+          <a href="nam.html" class="link">Nam</a>
+          <a href="nu.html" class="link">Nữ</a>
+          <a href="phu-kien.html" class="link">Phụ kiện</a>
+          <a href="index.html#sale" class="link">Sale</a>
+          <a href="labthuchanh.html" class="link">Lab thực hành</a>
+        </nav>
+
+        <div class="header-actions" aria-label="Tác vụ nhanh">
+          <div class="header-pop">
+            <input class="header-toggle" id="searchToggle" type="checkbox" />
+            <label class="icon-btn" for="searchToggle" aria-label="Tìm kiếm">
+              <svg class="icon" viewBox="0 0 24 24" aria-hidden="true">
+                <path d="M21 21l-4.35-4.35"></path>
+                <circle cx="11" cy="11" r="6"></circle>
+              </svg>
+            </label>
+            <div class="quick-panel" role="search">
+              <div class="quick-title">
+                <b>Tìm sản phẩm</b>
+                <span class="chip">Sneaker · Running · Sandal</span>
+              </div>
+              <form class="quick-form" data-header-search-form>
+                <div class="search-row">
+                  <input class="input" type="search" name="q" placeholder="Nhập tên giày, hãng, loại..."
+                    autocomplete="off" />
+                  <button class="btn btn-primary btn-sm" type="submit">
+                    Tìm
+                  </button>
+                </div>
+              </form>
+            </div>
+          </div>
+          <a class="icon-btn" href="cart.html" aria-label="Giỏ hàng">
+            <svg class="icon" viewBox="0 0 24 24" aria-hidden="true">
+              <path d="M6 6h15l-1.5 9h-12z"></path>
+              <path d="M6 6l-2-3H2"></path>
+              <circle cx="9" cy="20" r="1.5"></circle>
+              <circle cx="18" cy="20" r="1.5"></circle>
+            </svg>
+            <span class="cart-count" data-cart-count aria-label="Số sản phẩm trong giỏ">0</span>
+          </a>
+          <div class="header-pop">
+            <input class="header-toggle" id="accountToggle" type="checkbox" />
+            <label class="icon-btn" for="accountToggle" aria-label="Tài khoản">
+              <svg class="icon" viewBox="0 0 24 24" aria-hidden="true">
+                <circle cx="12" cy="8" r="4"></circle>
+                <path d="M4 21c1.8-4.2 14.2-4.2 16 0"></path>
+              </svg>
+            </label>
+            <div class="quick-panel" aria-label="Tài khoản">
+              <div class="quick-title">
+                <b>Tài khoản</b>
+                <span class="chip">Thành viên TT Shoes</span>
+              </div>
+              <form class="quick-form" action="#" method="post">
+                <input class="input" type="email" placeholder="Email" autocomplete="email" />
+                <input class="input" type="password" placeholder="Mật khẩu" autocomplete="current-password" />
+                <button class="btn btn-primary" type="submit">
+                  Đăng nhập
+                </button>
+                <div class="account-links">
+                  <a class="link" href="index.html#account">Tạo tài khoản</a>
+                  <a class="link" href="index.html#account">Quên mật khẩu?</a>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main id="main">
+    <section id="cart" class="section" aria-label="Giỏ hàng  ">
+      <div class="container">
+        <div class="section-head">
+          <div>
+            <h2>Giỏ hàng</h2>
+          </div>
+          <a class="btn btn-sm btn-outline" href="index.html#products" aria-label="Tiếp tục mua sắm">Tiếp tục mua
+            sắm</a>
+        </div>
+
+        <div class="cart">
+          <div class="panel">
+            <div class="panel-pad">
+              <table class="table" aria-label="Danh sách sản phẩm trong giỏ">
+                <thead>
+                  <tr>
+                    <th scope="col">Sản phẩm</th>
+                    <th scope="col">Số lượng</th>
+                    <th scope="col">Tạm tính</th>
+                  </tr>
+                </thead>
+                <tbody data-cart-tbody></tbody>
+              </table>
+
+              <div style="
+                    display: flex;
+                    justify-content: space-between;
+                    gap: 12px;
+                    flex-wrap: wrap;
+                    margin-top: 14px;
+                  ">
+                <a class="btn btn-outline" href="index.html#products" aria-label="Thêm sản phẩm khác">Thêm sản phẩm
+                  khác</a>
+                <a class="btn btn-primary" href="cart.html#checkout" aria-label="Tiến hành thanh toán">Tiến hành thanh
+                  toán</a>
+              </div>
+            </div>
+          </div>
+
+          <aside class="panel" aria-label="Tóm tắt giỏ hàng">
+            <div class="panel-pad">
+              <b style="
+                    display: block;
+                    font-weight: 900;
+                    letter-spacing: -0.02em;
+                    font-size: 18px;
+                  ">Tóm tắt đơn hàng</b>
+              <p style="color: var(--muted); margin-top: 8px"></p>
+
+              <div style="display: grid; gap: 10px; margin-top: 14px">
+                <div style="
+                      display: flex;
+                      justify-content: space-between;
+                      gap: 10px;
+                    ">
+                  <span style="color: var(--muted)">Tạm tính</span>
+                  <b data-summary-subtotal>0đ</b>
+                </div>
+                <div style="
+                      display: flex;
+                      justify-content: space-between;
+                      gap: 10px;
+                    ">
+                  <span style="color: var(--muted)">Giảm giá</span>
+                  <b>0đ</b>
+                </div>
+                <div style="
+                      display: flex;
+                      justify-content: space-between;
+                      gap: 10px;
+                    ">
+                  <span style="color: var(--muted)">Phí vận chuyển</span>
+                  <b>0đ</b>
+                </div>
+
+                <div class="divider" aria-hidden="true"></div>
+
+                <div style="
+                      display: flex;
+                      justify-content: space-between;
+                      gap: 10px;
+                      align-items: baseline;
+                    ">
+                  <span style="color: var(--muted)">Tổng</span>
+                  <b style="font-size: 22px; letter-spacing: -0.03em" data-summary-total>0đ</b>
+                </div>
+              </div>
+
+              <div style="margin-top: 14px; display: grid; gap: 10px">
+                <div class="field">
+                  <label class="label" for="coupon">Mã giảm giá</label>
+                  <input class="input" id="coupon" name="coupon" type="text" placeholder="Nhập mã (ví dụ: TT10)" />
+                </div>
+                <a class="btn btn-outline" href="cart.html" aria-label="Áp dụng mã">Áp dụng</a>
+                <a class="btn btn-accent" href="cart.html#checkout" aria-label="Thanh toán ngay">Thanh toán ngay</a>
+              </div>
+            </div>
+          </aside>
+        </div>
+      </div>
+    </section>
+    <section id="checkout" class="section" aria-label="Thanh toán  ">
+      <div class="container">
+        <div class="section-head">
+          <div>
+            <h2>Thanh toán</h2>
+          </div>
+          <a class="btn btn-sm btn-outline" href="cart.html" aria-label="Quay lại giỏ hàng">Quay lại giỏ</a>
+        </div>
+
+        <div class="checkout">
+          <div class="panel">
+            <div class="panel-pad">
+              <form class="form" action="#" method="post" aria-label="Form thông tin giao hàng  ">
+                <div class="row">
+                  <div class="field">
+                    <label class="label" for="name">Họ và tên</label>
+                    <input class="input" id="name" name="name" type="text" autocomplete="name"
+                      placeholder="Nguyễn Văn A" required />
+                  </div>
+                  <div class="field">
+                    <label class="label" for="phone">Số điện thoại</label>
+                    <input class="input" id="phone" name="phone" type="tel" autocomplete="tel" placeholder="09xxxxxxxx"
+                      required />
+                  </div>
+                </div>
+
+                <div class="field">
+                  <label class="label" for="address">Địa chỉ</label>
+                  <input class="input" id="address" name="address" type="text" autocomplete="street-address"
+                    placeholder="Số nhà, đường, phường/xã..." required />
+                </div>
+
+                <div class="row">
+                  <div class="field">
+                    <label class="label" for="city">Tỉnh/Thành</label>
+                    <select class="select" id="city" name="city" required>
+                      <option value="" selected disabled>
+                        Chọn tỉnh/thành
+                      </option>
+                      <option>TP. Hồ Chí Minh</option>
+                      <option>Hà Nội</option>
+                      <option>Đà Nẵng</option>
+                      <option>Cần Thơ</option>
+                    </select>
+                  </div>
+                  <div class="field">
+                    <label class="label" for="note">Ghi chú (tuỳ chọn)</label>
+                    <input class="input" id="note" name="note" type="text" placeholder="Ví dụ: giao giờ hành chính" />
+                  </div>
+                </div>
+
+                <div class="divider" aria-hidden="true"></div>
+
+                <div style="display: flex; gap: 10px; flex-wrap: wrap">
+                  <button class="btn btn-accent" type="submit" aria-label="Đặt hàng  ">
+                    Đặt hàng
+                  </button>
+                  <a class="btn btn-outline" href="index.html#products" aria-label="Tiếp tục mua sắm">Tiếp tục mua
+                    sắm</a>
+                </div>
+
+                <p style="
+                      color: var(--muted);
+                      margin-top: 6px;
+                      font-size: 13px;
+                      line-height: 1.8;
+                    ">
+                  Bằng cách đặt hàng, bạn đồng ý với
+                  <a class="link" href="#footer">điều khoản</a> và
+                  <a class="link" href="#footer">chính sách.</a>
+                </p>
+              </form>
+            </div>
+          </div>
+
+          <aside class="panel" aria-label="Tóm tắt thanh toán">
+            <div class="panel-pad">
+              <b style="
+                    display: block;
+                    font-weight: 900;
+                    letter-spacing: -0.02em;
+                    font-size: 18px;
+                  ">Tóm tắt thanh toán</b>
+              <p style="color: var(--muted); margin-top: 8px">
+                Đơn hàng của bạn.
+              </p>
+
+              <div style="display: grid; gap: 12px; margin-top: 14px">
+                <div data-checkout-items style="display: grid; gap: 12px"></div>
+
+                <div class="divider" aria-hidden="true"></div>
+
+                <div style="
+                      display: flex;
+                      justify-content: space-between;
+                      gap: 10px;
+                    ">
+                  <span style="color: var(--muted)">Tổng thanh toán</span>
+                  <b style="font-size: 22px; letter-spacing: -0.03em" data-checkout-total>0đ</b>
+                </div>
+
+                <a class="btn btn-primary" href="index.html#home" aria-label="Quay về trang chủ">Quay về trang chủ</a>
+              </div>
+            </div>
+          </aside>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer id="footer" class="footer" role="contentinfo" aria-label="Chân trang">
+    <div class="container">
+      <div class="foot">
+        <div>
+          <div class="brand" style="margin-bottom: 10px">
+            <span class="mark" aria-hidden="true">TT</span>
+            <span>TT <span style="opacity: 0.7">Shoes</span></span>
+          </div>
+          <div style="
+                margin-top: 12px;
+                display: flex;
+                gap: 10px;
+                flex-wrap: wrap;
+              ">
+            <span class="chip" style="
+                  background: rgba(255, 255, 255, 0.1);
+                  border-color: rgba(255, 255, 255, 0.14);
+                  color: rgba(255, 255, 255, 0.78);
+                ">Hỗ trợ: 1900 0000</span>
+            <span class="chip" style="
+                  background: rgba(255, 255, 255, 0.1);
+                  border-color: rgba(255, 255, 255, 0.14);
+                  color: rgba(255, 255, 255, 0.78);
+                ">Email: dh52301759@student.stu.edu.vn</span>
+          </div>
+        </div>
+
+        <div>
+          <h4>Công ty</h4>
+          <ul aria-label="Liên kết công ty">
+            <li><a class="link" href="#footer">Giới thiệu</a></li>
+            <li><a class="link" href="#footer">Tuyển dụng</a></li>
+            <li><a class="link" href="#footer">Điều khoản</a></li>
+            <li><a class="link" href="#footer">Chính sách bảo mật</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4>Hỗ trợ</h4>
+          <ul aria-label="Liên kết hỗ trợ">
+            <li><a class="link" href="#footer">Hướng dẫn chọn size</a></li>
+            <li>
+              <a class="link" href="#footer">Đổi trả &amp; hoàn tiền</a>
+            </li>
+            <li><a class="link" href="#footer">Vận chuyển</a></li>
+            <li><a class="link" href="#footer">Câu hỏi thường gặp</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4>Kết nối</h4>
+          <div class="social" aria-label="Mạng xã hội">
+            <a href="#footer" aria-label="Instagram">
+              <svg class="icon" viewBox="0 0 24 24" aria-hidden="true" style="stroke: #fff">
+                <rect x="4" y="4" width="16" height="16" rx="4"></rect>
+                <circle cx="12" cy="12" r="3.5"></circle>
+                <path d="M17.5 6.5h.01"></path>
+              </svg>
+            </a>
+            <a href="https://www.facebook.com/profile.php?id=61582233749640" aria-label="Facebook">
+              <svg class="icon" viewBox="0 0 24 24" aria-hidden="true" style="stroke: #fff">
+                <path d="M14 9h3V6h-3c-2.2 0-4 1.8-4 4v3H7v3h3v6h3v-6h3l1-3h-4v-3c0-.6.4-1 1-1z"></path>
+              </svg>
+            </a>
+            <a href="#footer" aria-label="YouTube">
+              <svg class="icon" viewBox="0 0 24 24" aria-hidden="true" style="stroke: #fff">
+                <path d="M22 12s0-4-1-5-5-1-9-1-8 0-9 1-1 5-1 5 0 4 1 5 5 1 9 1 8 0 9-1 1-5 1-5z"></path>
+                <path d="M10 15V9l6 3-6 3z"></path>
+              </svg>
+            </a>
+            <a href="#footer" aria-label="TikTok">
+              <svg class="icon" viewBox="0 0 24 24" aria-hidden="true" style="stroke: #fff">
+                <path d="M14 4v10a4 4 0 1 1-4-4"></path>
+                <path d="M14 4c1.5 2.5 3.5 4 6 4"></path>
+              </svg>
+            </a>
+          </div>
+
+          <div class="newsletter" aria-label="Đăng ký nhận tin">
+            <div class="field" style="margin-top: 14px">
+              <label class="label" for="nl" style="color: rgba(255, 255, 255, 0.78)">Newsletter</label>
+              <input class="input" id="nl" name="nl" type="email" placeholder="Email của bạn" />
+            </div>
+            <a class="btn btn-accent" href="#footer" aria-label="Đăng ký  ">Đăng ký
+            </a>
+            <p style="
+                  color: rgba(255, 255, 255, 0.64);
+                  font-size: 13px;
+                  line-height: 1.8;
+                ">
+              Nhận ưu đãi &amp; drops mới.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom" aria-label="Thông tin bản quyền">
+        <span>© TT Shoes.</span>
+        <span>Họ và tên: Trần Thanh Tâm | MSSV: DH52301759 | Lớp: D23_TH04 | Nhóm
+          16 Thứ 5 Ca 1</span>
+      </div>
+    </div>
+  </footer>
+  <script src="js/main.js"></script>
+</body>
+
+</html>

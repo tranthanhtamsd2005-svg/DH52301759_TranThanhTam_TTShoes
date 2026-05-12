@@ -1,0 +1,106 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>BookStore</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/fork-awesome@1.2.0/css/fork-awesome.min.css" integrity="sha256-XoaMnoYC5TH6/+ihMEnospgm0J1PM/nioxbOUdnM8HY=" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Agbalumo&family=Dancing+Script:wght@600&family=Kanit&family=Lora:wght@500;600&family=Poppins:wght@400;500&display=swap" rel="stylesheet">
+    <!-- CSS -->
+    <link rel="stylesheet" href="path/to/fork-awesome/css/fork-awesome.min.css">
+    <link rel="stylesheet" href="styles/main.css" />
+</head>
+
+<body>
+    <div id="container">
+
+        <form name="frmdangkithanhvien" action="xlThem.php" method="post" enctype="multipart/form-data">
+            <table border="0" width="100%">
+            <tr>
+            <td colspan="2" align="center"><em>THÊM SẢN PHẨM</em></td></tr>
+            
+            
+            <tr><td>Mã sản phẩm</td>
+           	<td><input type="text" name="nmMasanpham" size="30"/></td>
+            </tr>
+            <tr><td>Tên sản phẩm</td>
+           	<td><input type="text" name="nmTensanpham" size="30"/></td>
+               <tr>
+                <td>Hình đại diện</td>
+                <td><input type="file" name="nmfileAVT"></td>
+                <tr>
+                    <td>Hãng sản xuât</td>
+                    <td><select name="nmHangsanxuat">
+                      <option value="">Chọn tên hãng</option>
+                 <option value="thienlong">Thiên Long</option>
+                 <option value="thanhtam">Thanh Tâm</option>
+                </tr>
+            <tr><td>Kích thước</td>
+           	 <td><table>
+                <td>W:</td>
+                <td><input type="text" name="nmSizew"></td>
+                <td>H:</td>
+                <td><input type="text" name="nmSizeh"></td>
+                <td>mm</td>
+            </table></td>
+            </tr>
+            <tr>
+                <td>Số trang</td>
+                <td>
+                    <table>
+                        <tr>
+                            <td><input type="text" name="nmNumbertext"></td>
+                            <td>trang</td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+            <tr><td>Tác giả</td>
+              <td><input type="text" name="nmTacgia" size="50" /></td>
+            </tr>
+            
+            <tr><td>Giá</td>
+                <td>
+                    <table>
+                        <tr>
+                            <td><input type="text" name="nmGia" size="50"/></td>
+                            <td><input type="color" name="nmColor"></td>
+                        </tr>
+                    </table>
+                </td>
+             
+            </tr>
+            <tr><td>Xuất xứ</td>
+           	<td><input type="text" name="nmXuatXu" size="50"/></td>
+            </tr>
+            
+</select>
+            </td>
+           
+            <tr>
+                <td>Thể loại</td>
+                <td><table>
+                    <tr>
+                        <td>  <input type="checkbox" name="genres[]" value="vanhoc" /> Văn học<br />
+                            <input type="checkbox" name="genres[]" value="kinhte" /> Kinh tế<br />
+                            <input type="checkbox" name="genres[]" value="tamly" /> Tâm lý<br /></td>
+                        <td><input type="checkbox" name="genres[]" value="thieunhi" /> Thiếu nhi<br />
+                            <input type="checkbox" name="genres[]" value="giaokhoa" /> Giáo khoa<br />
+                            <input type="checkbox" name="genres[]" value="ngoaingu" /> Ngoại ngữ<br /></td>
+                    </tr>
+                </table>
+                </td>
+            </tr>
+            <tr>
+              <td colspan="2" align="center"><br/><input type="submit" name="nmSubmit" value="Đăng ký" /> 
+                <input type="reset" name="nmReset" value="Xóa" /> </td>
+            </tr>
+           </table> 
+            </form>
+    </div>
+    
+</body>
+
+</html>

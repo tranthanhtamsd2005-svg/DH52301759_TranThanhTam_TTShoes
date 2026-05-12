@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Danh sách bài lab thực hành tại TT Shoes." />
+  <title>TT Shoes — Lab thực hành</title>
+  <link rel="icon" type="image/svg+xml" href="img/Logo.svg" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+
+<body>
+  <a class="sr-only" href="#main">Bỏ qua điều hướng, tới nội dung chính</a>
+
+  <header class="header" role="banner">
+    <div class="container">
+      <div class="topbar">
+        <a class="brand" href="index.html#home" aria-label="TT Shoes - Trang chủ">
+          <span class="mark" aria-hidden="true">TT</span>
+          <span>TT <span style="opacity: 0.7">Shoes</span></span>
+        </a>
+
+        <nav class="nav" aria-label="Điều hướng chính">
+          <a href="index.html#home" class="link">Trang chủ</a>
+          <a href="nam.html" class="link">Nam</a>
+          <a href="nu.html" class="link">Nữ</a>
+          <a href="phu-kien.html" class="link">Phụ kiện</a>
+          <a href="index.html#sale" class="link">Sale</a>
+          <a href="labthuchanh.html" class="link">Lab thực hành</a>
+        </nav>
+
+        <div class="header-actions" aria-label="Tác vụ nhanh">
+          <div class="header-pop">
+            <input class="header-toggle" id="searchToggle" type="checkbox" />
+            <label class="icon-btn" for="searchToggle" aria-label="Tìm kiếm">
+              <svg class="icon" viewBox="0 0 24 24" aria-hidden="true">
+                <path d="M21 21l-4.35-4.35"></path>
+                <circle cx="11" cy="11" r="6"></circle>
+              </svg>
+            </label>
+            <div class="quick-panel" role="search">
+              <div class="quick-title">
+                <b>Tìm sản phẩm</b>
+                <span class="chip">Sneaker · Running · Sandal</span>
+              </div>
+              <form class="quick-form" data-header-search-form>
+                <div class="search-row">
+                  <input class="input" type="search" name="q" placeholder="Nhập tên giày, hãng, loại..."
+                    autocomplete="off" />
+                  <button class="btn btn-primary btn-sm" type="submit">
+                    Tìm
+                  </button>
+                </div>
+              </form>
+            </div>
+          </div>
+
+          <a class="icon-btn" href="cart.html" aria-label="Giỏ hàng">
+            <svg class="icon" viewBox="0 0 24 24" aria-hidden="true">
+              <path d="M6 6h15l-1.5 9h-12z"></path>
+              <path d="M6 6l-2-3H2"></path>
+              <circle cx="9" cy="20" r="1.5"></circle>
+              <circle cx="18" cy="20" r="1.5"></circle>
+            </svg>
+            <span class="cart-count" data-cart-count aria-label="Số sản phẩm trong giỏ">0</span>
+          </a>
+
+          <div class="header-pop">
+            <input class="header-toggle" id="accountToggle" type="checkbox" />
+            <label class="icon-btn" for="accountToggle" aria-label="Tài khoản">
+              <svg class="icon" viewBox="0 0 24 24" aria-hidden="true">
+                <circle cx="12" cy="8" r="4"></circle>
+                <path d="M4 21c1.8-4.2 14.2-4.2 16 0"></path>
+              </svg>
+            </label>
+            <div class="quick-panel" aria-label="Tài khoản">
+              <div class="quick-title">
+                <b>Tài khoản</b>
+                <span class="chip">Thành viên TT Shoes</span>
+              </div>
+              <form class="quick-form" action="#" method="post">
+                <input class="input" type="email" placeholder="Email" autocomplete="email" />
+                <input class="input" type="password" placeholder="Mật khẩu" autocomplete="current-password" />
+                <button class="btn btn-primary" type="submit">
+                  Đăng nhập
+                </button>
+                <div class="account-links">
+                  <a class="link" href="index.html#account">Tạo tài khoản</a>
+                  <a class="link" href="index.html#account">Quên mật khẩu?</a>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="section" aria-label="Lab thực hành">
+      <div class="container">
+        <div class="section-head">
+          <div>
+            <h2>Lab thực hành</h2>
+            <p class="section-sub">
+              Tổng hợp các bài thực hành HTML, table, form và CSS cơ bản.
+            </p>
+          </div>
+          <a class="btn btn-sm btn-outline" href="index.html#products">Xem cửa hàng</a>
+        </div>
+
+        <div class="lab-list" role="list" aria-label="Danh sách lab thực hành">
+          <article class="card lab-card" role="listitem" id="lab01">
+            <div class="lab-card-body">
+              <span class="badge badge-hot">HTML</span>
+              <h3>Lab01: HTML</h3>
+              <ul>
+                <li>
+                  <a class="link" href="labthuchanh/Lab01/Vi_du/lab1_bai3.html">Lab1_3</a>
+                </li>
+                <li>
+                  <a class="link" href="labthuchanh/Lab01/Vi_du/lab1_bai4.html">Lab1_4</a>
+                </li>
+              </ul>
+              <a class="btn btn-primary" href="labthuchanh/Lab01/Vi_du/lab1_bai4.html">Xem chi tiết</a>
+            </div>
+          </article>
+
+          <article class="card lab-card" role="listitem" id="lab02">
+            <div class="lab-card-body">
+              <span class="badge badge-hot">Table</span>
+              <h3>Lab02: Table &amp; List</h3>
+              <ul>
+                <li>
+                  <a class="link" href="labthuchanh/Lab02/lab02_bai1.html">Lab2_1</a>
+                </li>
+                <li>
+                  <a class="link" href="labthuchanh/Lab02/lab02_bai2.html">Lab2_2</a>
+                </li>
+                <li>
+                  <a class="link" href="labthuchanh/Lab02/Vi_du_Lab01/lab02_bai3.html">Lab2_3</a>
+                </li>
+              </ul>
+              <a class="btn btn-primary" href="labthuchanh/Lab02/lab02_bai2.html">Xem chi tiết</a>
+            </div>
+          </article>
+
+          <article class="card lab-card" role="listitem" id="lab03">
+            <div class="lab-card-body">
+              <span class="badge badge-hot">Form</span>
+              <h3>Lab03: Frame &amp; Form</h3>
+              <ul>
+                <li>
+                  <a class="link" href="labthuchanh/Lab03/Vi_du/lab03_bai1.html">Lab3_1</a>
+                </li>
+                <li>
+                  <a class="link" href="labthuchanh/Lab03/Vi_du/lab03_bai2.html">Lab3_2</a>
+                </li>
+                <li>
+                  <a class="link" href="labthuchanh/Lab03/Vi_du/lab03_bai3.html">Lab3_3</a>
+                </li>
+              </ul>
+              <a class="btn btn-primary" href="labthuchanh/Lab03/Vi_du/lab03_bai3.html">Xem chi tiết</a>
+            </div>
+          </article>
+
+          <article class="card lab-card" role="listitem" id="lab04">
+            <div class="lab-card-body">
+              <span class="badge badge-hot">CSS</span>
+              <h3>Lab04: CSS cơ bản</h3>
+              <ul>
+                <li>
+                  <a class="link" href="labthuchanh/Lab04/Vi_du/lab04_bai1.html">Lab4_1</a>
+                </li>
+                <li>
+                  <a class="link" href="labthuchanh/Lab04/Vi_du/lab04_bai2.html">Lab4_2</a>
+                </li>
+                <li>
+                  <a class="link" href="labthuchanh/Lab04/Vi_du/lab04_bai3.html">Lab4_3</a>
+                </li>
+              </ul>
+              <a class="btn btn-primary" href="labthuchanh/Lab04/Vi_du/lab04_bai3.html">Xem chi tiết</a>
+            </div>
+          </article>
+
+          <article class="card lab-card" role="listitem" id="lab05">
+            <div class="lab-card-body">
+              <span class="badge badge-hot">CSS</span>
+              <h3>Lab05: Các thuộc tính CSS</h3>
+              <ul>
+                <li>
+                  <a class="link" href="labthuchanh/Lab05/Bai_2/index.html">Lab5_Bai2</a>
+                </li>
+                <li>
+                  <a class="link" href="labthuchanh/Lab05/Bai_VD_Menu/Menu.html">Lab5_Menu</a>
+                </li>
+              </ul>
+              <a class="btn btn-primary" href="labthuchanh/Lab05/Bai_2/index.html">Xem chi tiết</a>
+            </div>
+          </article>
+
+          <article class="card lab-card" role="listitem" id="lab06">
+            <div class="lab-card-body">
+              <span class="badge badge-hot">CSS</span>
+              <h3>Lab06: Responsive Web Design</h3>
+              <ul>
+                <li>
+                  <a class="link" href="labthuchanh/Lab06/menu_responsive/lab06_ menu_responsive.html">Lab06_
+                    menu_responsive.</a>
+                </li>
+                <li>
+                  <a class="link" href="labthuchanh/Lab06/Bai_2_Minh_hoa_layout/index.html">Lab06_bai2.</a>
+                </li>
+              </ul>
+              <a class="btn btn-primary" href="labthuchanh/Lab06/Bai_2_Minh_hoa_layout/index.html">Xem chi tiết</a>
+            </div>
+        </div>
+    </section>
+  </main>
+
+  <footer id="footer" class="footer" role="contentinfo" aria-label="Chân trang">
+    <div class="container">
+      <div class="footer-bottom">
+        <span>© TT Shoes.</span>
+        <span>Trần Thanh Tâm | DH52301759 | D23_TH04 | Nhóm 16 Thứ 5 Ca 1</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+
+</html>

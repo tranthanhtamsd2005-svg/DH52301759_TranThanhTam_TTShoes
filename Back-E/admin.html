@@ -1,0 +1,527 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Trang quản trị TT Shoes theo phong cách dashboard." />
+  <title>Admin Dashboard - TT Shoes</title>
+  <link rel="icon" type="image/svg+xml" href="../Font-E/img/Logo.svg" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="../Font-E/css/style.css" />
+</head>
+
+<body class="admin-body">
+  <a class="sr-only" href="#main">Bỏ qua điều hướng, tới nội dung chính</a>
+
+  <div class="admin-shell">
+    <aside class="admin-sidebar" aria-label="Thanh điều hướng quản trị">
+      <a class="brand admin-brand" href="../Font-E/index.html#home">
+        <span class="mark" aria-hidden="true">TT</span>
+        <span>TT <span style="opacity: 0.7">Admin</span></span>
+      </a>
+
+      <nav class="admin-nav" aria-label="Menu backend">
+        <a class="is-active" href="#dashboard" data-admin-nav>
+          <svg class="icon" viewBox="0 0 24 24" aria-hidden="true">
+            <path d="M4 13h6V4H4z"></path>
+            <path d="M14 20h6V4h-6z"></path>
+            <path d="M4 20h6v-3H4z"></path>
+          </svg>
+          Tổng quan
+        </a>
+        <a href="#orders" data-admin-nav>
+          <svg class="icon" viewBox="0 0 24 24" aria-hidden="true">
+            <path d="M6 2h12v20l-3-2-3 2-3-2-3 2z"></path>
+            <path d="M9 7h6"></path>
+            <path d="M9 11h6"></path>
+          </svg>
+          Đơn hàng
+        </a>
+        <a href="#products" data-admin-nav>
+          <svg class="icon" viewBox="0 0 24 24" aria-hidden="true">
+            <path d="M6 3h12l2 6v12H4V9z"></path>
+            <path d="M4 9h16"></path>
+            <path d="M9 13h6"></path>
+          </svg>
+          Sản phẩm
+        </a>
+        <a href="#customers" data-admin-nav>
+          <svg class="icon" viewBox="0 0 24 24" aria-hidden="true">
+            <path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"></path>
+            <circle cx="9" cy="7" r="4"></circle>
+            <path d="M22 21v-2a4 4 0 0 0-3-3.87"></path>
+            <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
+          </svg>
+          Khách hàng
+        </a>
+        <a href="#inventory" data-admin-nav>
+          <svg class="icon" viewBox="0 0 24 24" aria-hidden="true">
+            <path
+              d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z">
+            </path>
+            <path d="M3.3 7 12 12l8.7-5"></path>
+            <path d="M12 22V12"></path>
+          </svg>
+          Kho hàng
+        </a>
+        <a href="#marketing" data-admin-nav>
+          <svg class="icon" viewBox="0 0 24 24" aria-hidden="true">
+            <path d="M3 11h18"></path>
+            <path d="M5 11l2 8h10l2-8"></path>
+            <path d="M8 11V7a4 4 0 0 1 8 0v4"></path>
+          </svg>
+          Khuyến mãi
+        </a>
+        <a href="#settings" data-admin-nav>
+          <svg class="icon" viewBox="0 0 24 24" aria-hidden="true">
+            <circle cx="12" cy="12" r="3"></circle>
+            <path
+              d="M19.4 15a1.7 1.7 0 0 0 .34 1.88l.06.06a2 2 0 1 1-2.83 2.83l-.06-.06A1.7 1.7 0 0 0 15 19.4a1.7 1.7 0 0 0-1 .6 1.7 1.7 0 0 0-.4 1.1V21a2 2 0 1 1-4 0v-.09a1.7 1.7 0 0 0-.4-1.1 1.7 1.7 0 0 0-1-.6 1.7 1.7 0 0 0-1.88.34l-.06.06a2 2 0 1 1-2.83-2.83l.06-.06A1.7 1.7 0 0 0 4.6 15a1.7 1.7 0 0 0-.6-1 1.7 1.7 0 0 0-1.1-.4H3a2 2 0 1 1 0-4h.09a1.7 1.7 0 0 0 1.1-.4 1.7 1.7 0 0 0 .6-1 1.7 1.7 0 0 0-.34-1.88l-.06-.06a2 2 0 1 1 2.83-2.83l.06.06A1.7 1.7 0 0 0 9 4.6a1.7 1.7 0 0 0 1-.6 1.7 1.7 0 0 0 .4-1.1V3a2 2 0 1 1 4 0v.09a1.7 1.7 0 0 0 .4 1.1 1.7 1.7 0 0 0 1 .6 1.7 1.7 0 0 0 1.88-.34l.06-.06a2 2 0 1 1 2.83 2.83l-.06.06A1.7 1.7 0 0 0 19.4 9c.2.36.34.72.6 1 .3.28.68.4 1.1.4H21a2 2 0 1 1 0 4h-.09a1.7 1.7 0 0 0-1.1.4c-.28.28-.4.64-.41 1.2z">
+            </path>
+          </svg>
+          Cài đặt
+        </a>
+      </nav>
+
+      <div class="admin-mini-card">
+        <b>TT Shoes Store</b>
+        <a class="btn btn-sm btn-outline" href="../Font-E/index.html">Xem website</a>
+      </div>
+    </aside>
+
+    <main id="main" class="admin-main">
+      <header class="admin-topbar">
+        <div>
+          <span class="kicker">Dashboard</span>
+          <h1>Quản trị TT Shoes</h1>
+        </div>
+        <div class="admin-top-actions">
+          <label class="admin-search">
+            <svg class="icon" viewBox="0 0 24 24" aria-hidden="true">
+              <path d="M21 21l-4.35-4.35"></path>
+              <circle cx="11" cy="11" r="6"></circle>
+            </svg>
+            <input id="adminSearch" type="search" placeholder="Tìm đơn, sản phẩm, khách..." />
+          </label>
+          <button class="btn btn-outline btn-sm" type="button" data-reset-demo>
+            Reset dữ liệu demo
+          </button>
+          <button class="btn btn-primary btn-sm" type="button" data-export>
+            Xuất báo cáo
+          </button>
+        </div>
+      </header>
+
+      <section id="dashboard" class="admin-section is-active" data-admin-section data-admin-overview>
+        <div class="admin-stats" aria-label="Chỉ số tổng quan">
+          <article class="admin-stat" data-detail="Đã trừ các đơn bị hủy, tính theo dữ liệu đơn hàng trong backend.">
+            <span>Doanh thu hôm nay</span>
+            <b data-stat-revenue>18.750.000đ</b>
+            <small>+12% so với hôm qua</small>
+          </article>
+          <article class="admin-stat" data-detail="Gồm đơn mới, đang giao, hoàn tất và đã hủy trong hệ thống.">
+            <span>Đơn hàng mới</span>
+            <b data-stat-orders>289</b>
+            <small>80 đơn đang chờ xử lý</small>
+          </article>
+          <article class="admin-stat" data-detail="Kết nối trực tiếp với toàn bộ sản phẩm đang hiển thị trên website.">
+            <span>Sản phẩm</span>
+            <b data-stat-products>0</b>
+            <small>Cập nhật theo danh sách quản trị</small>
+          </article>
+          <article class="admin-stat" data-detail="Tổng khách mua hàng, phân hạng theo chi tiêu mẫu.">
+            <span>Khách hàng</span>
+            <b>1.248</b>
+            <small>38 khách mới trong tuần</small>
+          </article>
+        </div>
+
+        <div class="admin-stats admin-stats--secondary" aria-label="Tóm tắt vận hành">
+          <article class="admin-stat admin-stat--mini" data-detail="Tỷ lệ = Hoàn tất / (Tổng đơn - Đã hủy).">
+            <span>Tỷ lệ hoàn tất</span>
+            <b data-stat-success-rate>--%</b>
+            <small data-stat-success-note>Đang tính...</small>
+          </article>
+          <article class="admin-stat admin-stat--mini" data-detail="Số sản phẩm có tồn kho &le; 8 đôi (cảnh báo sớm).">
+            <span>Sắp hết hàng</span>
+            <b data-stat-low-stock>--</b>
+            <small>cần nhập thêm</small>
+          </article>
+          <article class="admin-stat admin-stat--mini"
+            data-detail="Tổng đơn đang ở trạng thái Chờ xử lý hoặc Đang giao.">
+            <span>Đơn đang xử lý</span>
+            <b data-stat-in-progress>--</b>
+            <small>ưu tiên trong hôm nay</small>
+          </article>
+        </div>
+
+        <div class="admin-grid-2">
+          <article class="panel">
+            <div class="panel-pad">
+              <div class="admin-panel-head">
+                <div>
+                  <h2>Biểu đồ doanh thu</h2>
+                  <p>7 ngày gần nhất</p>
+                </div>
+                <span class="chip">Tuần này</span>
+              </div>
+              <div class="admin-bars" aria-label="Biểu đồ cột doanh thu" data-chart-bars></div>
+            </div>
+          </article>
+
+          <article class="panel">
+            <div class="panel-pad">
+              <div class="admin-panel-head">
+                <div>
+                  <h2>Việc cần xử lý</h2>
+                  <p>Ưu tiên vận hành hôm nay</p>
+                </div>
+              </div>
+              <div class="admin-task-list">
+                <label class="check"><input type="checkbox" />
+                  <span>Xác nhận 6 đơn COD</span></label>
+                <label class="check"><input type="checkbox" checked />
+                  <span>Cập nhật tồn kho size 40</span></label>
+                <label class="check"><input type="checkbox" />
+                  <span>Đăng banner sale cuối tuần</span></label>
+                <label class="check"><input type="checkbox" />
+                  <span>Phản hồi 3 yêu cầu đổi trả</span></label>
+              </div>
+            </div>
+          </article>
+        </div>
+
+        <div class="admin-grid-3">
+          <article class="panel">
+            <div class="panel-pad">
+              <div class="admin-panel-head">
+                <div>
+                  <h2>Doanh thu theo tháng</h2>
+                </div>
+              </div>
+              <div class="admin-line-chart" aria-label="Biểu đồ đường doanh thu tháng" data-chart-line></div>
+            </div>
+          </article>
+
+          <article class="panel">
+            <div class="panel-pad">
+              <div class="admin-panel-head">
+                <div>
+                  <h2>Doanh số hằng ngày</h2>
+                  <p>Lượt sản phẩm bán ra.</p>
+                </div>
+              </div>
+              <div class="admin-mini-bars" data-chart-mini-bars></div>
+            </div>
+          </article>
+
+          <article class="panel">
+            <div class="panel-pad">
+              <div class="admin-panel-head">
+                <div>
+                  <h2><span data-stat-month-orders>289</span> đơn hàng</h2>
+                  <p>Đơn hàng tháng này</p>
+                </div>
+              </div>
+              <div class="admin-pie-wrap">
+                <div class="admin-pie" data-chart-pie></div>
+                <div class="admin-legend">
+                  <span><i style="background: #20c933"></i>Thành công</span>
+                  <span><i style="background: #ef5b7d"></i>Bị hủy</span>
+                  <span><i style="background: #ffa500"></i>Chờ xử lý</span>
+                  <span><i style="background: #0ea5a4"></i>Đang giao</span>
+                </div>
+              </div>
+            </div>
+          </article>
+        </div>
+
+        <div class="admin-grid-2 admin-grid-2--bottom">
+          <article class="panel">
+            <div class="panel-pad">
+              <div class="admin-panel-head">
+                <div>
+                  <h2>Top sản phẩm</h2>
+                  <p>Ưu tiên nhập kho &amp; đẩy bán.</p>
+                </div>
+                <span class="chip">7 ngày</span>
+              </div>
+              <div class="admin-top-products" data-top-products></div>
+            </div>
+          </article>
+          <article class="panel">
+            <div class="panel-pad">
+              <div class="admin-panel-head">
+                <div>
+                  <h2>Đơn gần đây</h2>
+                  <p>Theo dõi nhanh vận hành.</p>
+                </div>
+              </div>
+              <div class="admin-recent-orders" data-recent-orders></div>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section id="orders" class="admin-section" data-admin-section>
+        <div class="admin-panel-head">
+          <div>
+            <h2>Quản lý đơn hàng</h2>
+            <p>Theo dõi trạng thái, thanh toán và vận chuyển.</p>
+          </div>
+          <select class="select admin-filter" data-order-filter>
+            <option value="all">Tất cả trạng thái</option>
+            <option value="Chờ xử lý">Chờ xử lý</option>
+            <option value="Đang giao">Đang giao</option>
+            <option value="Hoàn tất">Hoàn tất</option>
+            <option value="Đã hủy">Đã hủy</option>
+          </select>
+        </div>
+        <div class="panel admin-table-wrap">
+          <table class="table admin-table">
+            <thead>
+              <tr>
+                <th>STT</th>
+                <th>Mã đơn</th>
+                <th>Khách hàng</th>
+                <th>Sản phẩm</th>
+                <th>Tổng tiền</th>
+                <th>Thanh toán</th>
+                <th>Trạng thái</th>
+              </tr>
+            </thead>
+            <tbody data-orders-body></tbody>
+          </table>
+        </div>
+      </section>
+
+      <section id="products" class="admin-section" data-admin-section>
+        <div class="admin-grid-products">
+          <article class="panel">
+            <div class="panel-pad">
+              <div class="admin-panel-head">
+                <div>
+                  <h2>Danh sách sản phẩm</h2>
+                  <p>Thêm, sửa nhanh tồn kho và xóa sản phẩm mẫu.</p>
+                </div>
+              </div>
+              <div class="admin-table-wrap">
+                <table class="table admin-table">
+                  <thead>
+                    <tr>
+                      <th>STT</th>
+                      <th>Sản phẩm</th>
+                      <th>Danh mục</th>
+                      <th>Giá</th>
+                      <th>Kho</th>
+                      <th>Hình ảnh</th>
+                      <th></th>
+                    </tr>
+                  </thead>
+                  <tbody data-products-body></tbody>
+                </table>
+              </div>
+            </div>
+          </article>
+
+          <article class="panel">
+            <div class="panel-pad">
+              <h2>Thêm sản phẩm</h2>
+              <form class="form admin-form" data-product-form>
+                <div class="field">
+                  <label class="label" for="productName">Tên sản phẩm</label>
+                  <input class="input" id="productName" name="name" required />
+                </div>
+                <div class="row">
+                  <div class="field">
+                    <label class="label" for="productCategory">Danh mục</label>
+                    <select class="select" id="productCategory" name="category">
+                      <option>Sneaker</option>
+                      <option>Running</option>
+                      <option>Lifestyle</option>
+                      <option>Phụ kiện</option>
+                    </select>
+                  </div>
+                  <div class="field">
+                    <label class="label" for="productPrice">Giá</label>
+                    <input class="input" id="productPrice" name="price" type="number" min="0" required />
+                  </div>
+                </div>
+                <div class="field">
+                  <label class="label" for="productStock">Tồn kho</label>
+                  <input class="input" id="productStock" name="stock" type="number" min="0" value="12" />
+                </div>
+                <div class="field">
+                  <label class="label" for="productImageUrl">Hình ảnh sản phẩm</label>
+                  <div class="admin-image-picker" data-image-picker>
+                    <input id="productImage" name="img" type="hidden" />
+                    <input class="input" id="productImageUrl" placeholder="Dán link ảnh sản phẩm" data-image-url />
+                    <input class="sr-only" id="productImageFile" type="file" accept="image/*" data-image-file />
+                    <label class="admin-upload-box" for="productImageFile" data-upload-box>
+                      <span class="admin-upload-icon" aria-hidden="true">
+                        <svg viewBox="0 0 24 24">
+                          <path d="M12 16V5"></path>
+                          <path d="M7 10l5-5 5 5"></path>
+                          <path d="M5 19h14"></path>
+                        </svg>
+                      </span>
+                      <span class="admin-upload-title">Chọn ảnh từ thiết bị</span>
+                      <span class="admin-upload-note">PNG, JPG hoặc WEBP</span>
+                      <img alt="" data-image-preview />
+                    </label>
+                  </div>
+                </div>
+                <div class="field">
+                  <label class="label" for="productDesc">Mô tả ngắn</label>
+                  <textarea class="textarea" id="productDesc" name="desc"
+                    placeholder="Chất liệu, form, ưu điểm..."></textarea>
+                </div>
+                <button class="btn btn-primary" type="submit">
+                  Thêm vào kho
+                </button>
+              </form>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section id="customers" class="admin-section" data-admin-section>
+        <div class="admin-panel-head">
+          <div>
+            <h2>Khách hàng</h2>
+            <p>Quản lý hạng thành viên, chi tiêu và lịch sử mua.</p>
+          </div>
+        </div>
+        <div class="panel admin-table-wrap">
+          <table class="table admin-table">
+            <thead>
+              <tr>
+                <th>STT</th>
+                <th>Khách hàng</th>
+                <th>Email</th>
+                <th>Đơn hàng</th>
+                <th>Chi tiêu</th>
+                <th>Hạng</th>
+              </tr>
+            </thead>
+            <tbody data-customers-body></tbody>
+          </table>
+        </div>
+      </section>
+
+      <section id="inventory" class="admin-section" data-admin-section>
+        <div class="admin-grid-2">
+          <article class="panel">
+            <div class="panel-pad">
+              <h2>Cảnh báo tồn kho</h2>
+              <div class="admin-inventory-list" data-inventory-list></div>
+            </div>
+          </article>
+          <article class="panel">
+            <div class="panel-pad">
+              <h2>Nhập kho nhanh</h2>
+              <form class="form" data-stock-form>
+                <div class="field">
+                  <label class="label" for="stockProduct">Sản phẩm</label>
+                  <select class="select" id="stockProduct" name="product"></select>
+                </div>
+                <div class="field">
+                  <label class="label" for="stockQty">Số lượng nhập</label>
+                  <input class="input" id="stockQty" name="qty" type="number" min="1" value="5" />
+                </div>
+                <button class="btn btn-primary" type="submit">
+                  Cập nhật tồn kho
+                </button>
+              </form>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section id="marketing" class="admin-section" data-admin-section>
+        <div class="admin-grid-2">
+          <article class="panel">
+            <div class="panel-pad">
+              <h2>Mã khuyến mãi</h2>
+              <div class="admin-coupons" data-coupons>
+                <div>
+                  <div>
+                    <b>SALE20</b><span>Giảm 20% đơn từ 1.000.000đ</span>
+                  </div>
+                </div>
+                <div>
+                  <div>
+                    <b>FREESHIP</b><span>Miễn phí vận chuyển toàn quốc</span>
+                  </div>
+                </div>
+                <div>
+                  <div>
+                    <b>VIP15</b><span>Giảm riêng cho khách hạng VIP</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </article>
+          <article class="panel">
+            <div class="panel-pad">
+              <h2>Tạo mã mới</h2>
+              <form class="form" data-coupon-form>
+                <div class="field">
+                  <label class="label" for="couponCode">Mã</label>
+                  <input class="input" id="couponCode" name="code" placeholder="VD: NEWDROP" required
+                    autocomplete="off" />
+                </div>
+                <div class="field">
+                  <label class="label" for="couponDesc">Mô tả</label>
+                  <input class="input" id="couponDesc" name="desc" placeholder="Giảm 10% bộ sưu tập mới" required />
+                </div>
+                <button class="btn btn-primary" type="submit">Tạo mã</button>
+              </form>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section id="settings" class="admin-section" data-admin-section>
+        <article class="panel">
+          <div class="panel-pad">
+            <h2>Cài đặt cửa hàng</h2>
+            <form class="form admin-settings" data-settings-form>
+              <div class="row">
+                <div class="field">
+                  <label class="label" for="storeName">Tên cửa hàng</label>
+                  <input class="input" id="storeName" value="TT Shoes" />
+                </div>
+                <div class="field">
+                  <label class="label" for="storePhone">Hotline</label>
+                  <input class="input" id="storePhone" value="1900 0000" />
+                </div>
+              </div>
+              <div class="field">
+                <label class="label" for="storeAddress">Địa chỉ</label>
+                <textarea class="textarea" id="storeAddress">
+180 Cao Lỗ, Quận 8, TP.HCM</textarea>
+              </div>
+              <label class="check"><input type="checkbox" checked />
+                <span>Cho phép đặt hàng COD</span></label>
+              <label class="check"><input type="checkbox" checked />
+                <span>Gửi email xác nhận đơn hàng</span></label>
+              <button class="btn btn-primary" type="submit">
+                Lưu cài đặt
+              </button>
+            </form>
+          </div>
+        </article>
+      </section>
+    </main>
+  </div>
+
+  <div class="admin-toast" data-admin-toast role="status" aria-live="polite"></div>
+  <script src="../Font-E/js/main.js"></script>
+  <script src="../Font-E/js/admin.js"></script>
+</body>
+
+</html>

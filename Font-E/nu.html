@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Giày nữ chính hãng chọn lọc tại TT Shoes." />
+  <title>TT Shoes — Giày Nữ</title>
+  <link rel="icon" type="image/svg+xml" href="img/Logo.svg" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+
+<body>
+  <a class="sr-only" href="#main">Bỏ qua điều hướng, tới nội dung chính</a>
+  <header class="header" role="banner">
+    <div class="container">
+      <div class="topbar">
+        <a class="brand" href="index.html#home" aria-label="TT Shoes - Trang chủ">
+          <span class="mark" aria-hidden="true">TT</span>
+          <span>TT <span style="opacity: 0.7">Shoes</span></span>
+        </a>
+        <nav class="nav" aria-label="Điều hướng chính">
+          <a href="index.html#home" class="link">Trang chủ</a>
+          <a href="nam.html" class="link">Nam</a>
+          <a href="nu.html" class="link">Nữ</a>
+          <a href="phu-kien.html" class="link">Phụ kiện</a>
+          <a href="index.html#sale" class="link">Sale</a>
+          <a href="labthuchanh.html" class="link">Lab thực hành</a>
+        </nav>
+        <div class="header-actions" aria-label="Tác vụ nhanh">
+          <div class="header-pop">
+            <input class="header-toggle" id="searchToggle" type="checkbox" />
+            <label class="icon-btn" for="searchToggle" aria-label="Tìm kiếm">
+              <svg class="icon" viewBox="0 0 24 24" aria-hidden="true">
+                <path d="M21 21l-4.35-4.35"></path>
+                <circle cx="11" cy="11" r="6"></circle>
+              </svg>
+            </label>
+            <div class="quick-panel" role="search">
+              <div class="quick-title">
+                <b>Tìm sản phẩm</b>
+                <span class="chip">Sneaker · Running · Sandal</span>
+              </div>
+              <form class="quick-form" data-header-search-form>
+                <div class="search-row">
+                  <input class="input" type="search" name="q" placeholder="Nhập tên giày, hãng, loại..."
+                    autocomplete="off" />
+                  <button class="btn btn-primary btn-sm" type="submit">
+                    Tìm
+                  </button>
+                </div>
+              </form>
+            </div>
+          </div>
+          <a class="icon-btn" href="cart.html" aria-label="Giỏ hàng">
+            <svg class="icon" viewBox="0 0 24 24" aria-hidden="true">
+              <path d="M6 6h15l-1.5 9h-12z"></path>
+              <path d="M6 6l-2-3H2"></path>
+              <circle cx="9" cy="20" r="1.5"></circle>
+              <circle cx="18" cy="20" r="1.5"></circle>
+            </svg>
+            <span class="cart-count" data-cart-count aria-label="Số sản phẩm trong giỏ">0</span>
+          </a>
+          <div class="header-pop">
+            <input class="header-toggle" id="accountToggle" type="checkbox" />
+            <label class="icon-btn" for="accountToggle" aria-label="Tài khoản">
+              <svg class="icon" viewBox="0 0 24 24" aria-hidden="true">
+                <circle cx="12" cy="8" r="4"></circle>
+                <path d="M4 21c1.8-4.2 14.2-4.2 16 0"></path>
+              </svg>
+            </label>
+            <div class="quick-panel" aria-label="Tài khoản">
+              <div class="quick-title">
+                <b>Tài khoản</b>
+                <span class="chip">Thành viên TT Shoes</span>
+              </div>
+              <form class="quick-form" action="#" method="post">
+                <input class="input" type="email" placeholder="Email" autocomplete="email" />
+                <input class="input" type="password" placeholder="Mật khẩu" autocomplete="current-password" />
+                <button class="btn btn-primary" type="submit">
+                  Đăng nhập
+                </button>
+                <div class="account-links">
+                  <a class="link" href="index.html#account">Tạo tài khoản</a>
+                  <a class="link" href="index.html#account">Quên mật khẩu?</a>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="section" aria-label="Giày nữ">
+      <div class="container">
+        <div class="section-head">
+          <div>
+            <h2>Giày Nữ</h2>
+            <p class="section-sub">
+              Các mẫu lifestyle, walking và sneaker nữ dễ phối, có giá sale và
+              đánh giá rõ ràng.
+            </p>
+          </div>
+          <a class="btn btn-sm btn-outline" href="nam.html">Xem giày nam</a>
+        </div>
+        <div class="grid" role="list" aria-label="Lưới sản phẩm nữ" data-product-grid data-collection="women"></div>
+      </div>
+    </section>
+  </main>
+
+  <footer id="footer" class="footer" role="contentinfo" aria-label="Chân trang">
+    <div class="container">
+      <div class="footer-bottom">
+        <span>© TT Shoes.</span>
+        <span>Trần Thanh Tâm | DH52301759 | D23_TH04 | Nhóm 16 Thứ 5 Ca 1</span>
+      </div>
+    </div>
+  </footer>
+  <script src="js/main.js"></script>
+</body>
+
+</html>
